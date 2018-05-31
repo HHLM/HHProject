@@ -7,12 +7,25 @@
 //
 
 #import "HHThirdViewController.h"
-
 @interface HHThirdViewController ()
 
 @end
 
 @implementation HHThirdViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+//    UINavigationBar *bar = self.navigationController.navigationBar;
+//    [bar setNavBarHeight:  88];
+//    CGRect rect = self.navigationController.navigationBar.frame;
+//    NSLog(@"%@",NSStringFromCGRect(rect));
+//    //调整导航栏标题的位置
+//    [bar setTitleVerticalPositionAdjustment:-44 forBarMetrics:UIBarMetricsDefault];
+//    
+//    //调整导航栏按钮的位置
+//    UIBarButtonItem *item = self.navigationItem.leftBarButtonItem;
+//    [item setBackgroundVerticalPositionAdjustment:-44 forBarMetrics:UIBarMetricsDefault];
+//    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

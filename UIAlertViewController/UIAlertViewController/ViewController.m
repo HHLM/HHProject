@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"我是首页我怕谁";
     HHView *alert = [[HHView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     self.alertView = alert;
     [self.view addSubview:alert];
