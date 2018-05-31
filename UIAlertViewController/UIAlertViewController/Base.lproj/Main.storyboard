@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yg3-AC-NzR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDp-Gk-SAj">
+                                <rect key="frame" x="89.5" y="94" width="38" height="30"/>
+                                <state key="normal" title="按钮1"/>
+                                <connections>
+                                    <action selector="alertshow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjE-c3-sdm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-r9-8Un">
+                                <rect key="frame" x="247.5" y="94" width="40" height="30"/>
+                                <state key="normal" title="按钮3"/>
+                                <connections>
+                                    <action selector="alertshow2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnF-eZ-4xd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-Im-pq4">
+                                <rect key="frame" x="247.5" y="164" width="40" height="30"/>
+                                <state key="normal" title="按钮5"/>
+                                <connections>
+                                    <action selector="alertshow4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGD-ef-QER"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LO0-hm-Vjb">
+                                <rect key="frame" x="167.5" y="94" width="40" height="30"/>
+                                <state key="normal" title="按钮2"/>
+                                <connections>
+                                    <action selector="alertshow1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilQ-D3-kAj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feW-Mk-nTP">
+                                <rect key="frame" x="86.5" y="164" width="41" height="30"/>
+                                <state key="normal" title="按钮4"/>
+                                <connections>
+                                    <action selector="alertshow3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNs-4V-oYV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pha-Qx-93d">
+                                <rect key="frame" x="167.5" y="164" width="40" height="30"/>
+                                <state key="normal" title="按钮6"/>
+                                <connections>
+                                    <action selector="alertshow5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFy-ge-TZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-cc-IXU">
+                                <rect key="frame" x="213.5" y="234" width="108" height="30"/>
+                                <state key="normal" title="导航透明度改变"/>
+                                <connections>
+                                    <action selector="pushNavBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVV-mF-3kN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMd-Xt-Ryv">
+                                <rect key="frame" x="45" y="234" width="124" height="30"/>
+                                <state key="normal" title="显示view里的alert"/>
+                                <connections>
+                                    <action selector="alertViewShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ie3-ec-fEp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pha-Qx-93d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0W5-nB-d4V"/>
+                            <constraint firstItem="LO0-hm-Vjb" firstAttribute="leading" secondItem="dDp-Gk-SAj" secondAttribute="trailing" constant="40" id="AoL-ML-WQa"/>
+                            <constraint firstItem="Wa8-cc-IXU" firstAttribute="centerX" secondItem="Edh-Im-pq4" secondAttribute="centerX" id="BVI-ZZ-U7d"/>
+                            <constraint firstItem="Wa8-cc-IXU" firstAttribute="top" secondItem="Edh-Im-pq4" secondAttribute="bottom" constant="40" id="DMP-2K-ZHp"/>
+                            <constraint firstItem="MX2-r9-8Un" firstAttribute="leading" secondItem="LO0-hm-Vjb" secondAttribute="trailing" constant="40" id="O0x-Jd-G8n"/>
+                            <constraint firstItem="feW-Mk-nTP" firstAttribute="top" secondItem="dDp-Gk-SAj" secondAttribute="bottom" constant="40" id="Owp-V6-Hz2"/>
+                            <constraint firstItem="LO0-hm-Vjb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Q3S-Ju-dqp"/>
+                            <constraint firstItem="LO0-hm-Vjb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S74-Ca-EkF"/>
+                            <constraint firstItem="pha-Qx-93d" firstAttribute="top" secondItem="LO0-hm-Vjb" secondAttribute="bottom" constant="40" id="Tqy-CI-6B3"/>
+                            <constraint firstItem="dDp-Gk-SAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Ume-HK-FQJ"/>
+                            <constraint firstItem="yMd-Xt-Ryv" firstAttribute="top" secondItem="feW-Mk-nTP" secondAttribute="bottom" constant="40" id="WGC-WU-eOZ"/>
+                            <constraint firstItem="Edh-Im-pq4" firstAttribute="top" secondItem="LO0-hm-Vjb" secondAttribute="bottom" constant="40" id="fYz-Lo-96a"/>
+                            <constraint firstItem="MX2-r9-8Un" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="nQc-wy-d8d"/>
+                            <constraint firstItem="Edh-Im-pq4" firstAttribute="leading" secondItem="pha-Qx-93d" secondAttribute="trailing" constant="40" id="uBe-hL-TRV"/>
+                            <constraint firstItem="yMd-Xt-Ryv" firstAttribute="centerX" secondItem="feW-Mk-nTP" secondAttribute="centerX" id="uNW-Qd-Pmn"/>
+                            <constraint firstItem="pha-Qx-93d" firstAttribute="leading" secondItem="feW-Mk-nTP" secondAttribute="trailing" constant="40" id="xU3-XL-Gki"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hfm-7N-QOW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="-251.42428785607197"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EMK-QM-NoU">
+            <objects>
+                <navigationController id="yg3-AC-NzR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kPV-go-BCi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="18f-Yj-MJr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQn-aK-ivG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="-243"/>
+        </scene>
+    </scenes>
+</document>
