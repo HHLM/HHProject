@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04349CC920C2CE530058FADB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CC820C2CE530058FADB /* AppDelegate.m */; };
+		04349CCC20C2CE540058FADB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CCB20C2CE540058FADB /* ViewController.m */; };
+		04349CCF20C2CE540058FADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04349CCD20C2CE540058FADB /* Main.storyboard */; };
+		04349CD120C2CE540058FADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04349CD020C2CE540058FADB /* Assets.xcassets */; };
+		04349CD420C2CE540058FADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04349CD220C2CE540058FADB /* LaunchScreen.storyboard */; };
+		04349CD720C2CE540058FADB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CD620C2CE540058FADB /* main.m */; };
+		04349CDF20C2CF310058FADB /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CDE20C2CF310058FADB /* HHBaseViewController.m */; };
+		04349CE220C2D5E10058FADB /* HHNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CE120C2D5E10058FADB /* HHNextViewController.m */; };
+		04349CE520C3C8720058FADB /* HHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CE420C3C8720058FADB /* HHBaseView.m */; };
+		04349CE820C3C8870058FADB /* HHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CE720C3C8870058FADB /* HHBaseTableViewCell.m */; };
+		04349CEE20C3F72B0058FADB /* HHHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04349CED20C3F72B0058FADB /* HHHeadView.m */; };
+		A2F239EBA5CDF7F1C1C4EDD6 /* libPods-HHMasonryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7A89987826CAD01B22EA4E /* libPods-HHMasonryDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04349CC420C2CE530058FADB /* HHMasonryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHMasonryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04349CC720C2CE530058FADB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04349CC820C2CE530058FADB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04349CCA20C2CE530058FADB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04349CCB20C2CE540058FADB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04349CCE20C2CE540058FADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04349CD020C2CE540058FADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04349CD320C2CE540058FADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04349CD520C2CE540058FADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04349CD620C2CE540058FADB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04349CDD20C2CF310058FADB /* HHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBaseViewController.h; sourceTree = "<group>"; };
+		04349CDE20C2CF310058FADB /* HHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBaseViewController.m; sourceTree = "<group>"; };
+		04349CE020C2D5E10058FADB /* HHNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNextViewController.h; sourceTree = "<group>"; };
+		04349CE120C2D5E10058FADB /* HHNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNextViewController.m; sourceTree = "<group>"; };
+		04349CE320C3C8720058FADB /* HHBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBaseView.h; sourceTree = "<group>"; };
+		04349CE420C3C8720058FADB /* HHBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBaseView.m; sourceTree = "<group>"; };
+		04349CE620C3C8870058FADB /* HHBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBaseTableViewCell.h; sourceTree = "<group>"; };
+		04349CE720C3C8870058FADB /* HHBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBaseTableViewCell.m; sourceTree = "<group>"; };
+		04349CEC20C3F72B0058FADB /* HHHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHHeadView.h; sourceTree = "<group>"; };
+		04349CED20C3F72B0058FADB /* HHHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHHeadView.m; sourceTree = "<group>"; };
+		0F7A89987826CAD01B22EA4E /* libPods-HHMasonryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HHMasonryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A81E88D925B04E96CEE9B4C /* Pods-HHMasonryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHMasonryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHMasonryDemo/Pods-HHMasonryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F6445963F6B7E0A829D04DEB /* Pods-HHMasonryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHMasonryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHMasonryDemo/Pods-HHMasonryDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04349CC120C2CE530058FADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F239EBA5CDF7F1C1C4EDD6 /* libPods-HHMasonryDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04349CBB20C2CE530058FADB = {
+			isa = PBXGroup;
+			children = (
+				04349CC620C2CE530058FADB /* HHMasonryDemo */,
+				04349CC520C2CE530058FADB /* Products */,
+				0A2BDF343644AF5E6CEC319C /* Pods */,
+				0AF15062B7F65A2F0F242B34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04349CC520C2CE530058FADB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04349CC420C2CE530058FADB /* HHMasonryDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04349CC620C2CE530058FADB /* HHMasonryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04349CC720C2CE530058FADB /* AppDelegate.h */,
+				04349CC820C2CE530058FADB /* AppDelegate.m */,
+				04349CCA20C2CE530058FADB /* ViewController.h */,
+				04349CCB20C2CE540058FADB /* ViewController.m */,
+				04349CE320C3C8720058FADB /* HHBaseView.h */,
+				04349CE420C3C8720058FADB /* HHBaseView.m */,
+				04349CEC20C3F72B0058FADB /* HHHeadView.h */,
+				04349CED20C3F72B0058FADB /* HHHeadView.m */,
+				04349CE620C3C8870058FADB /* HHBaseTableViewCell.h */,
+				04349CE720C3C8870058FADB /* HHBaseTableViewCell.m */,
+				04349CDD20C2CF310058FADB /* HHBaseViewController.h */,
+				04349CDE20C2CF310058FADB /* HHBaseViewController.m */,
+				04349CE020C2D5E10058FADB /* HHNextViewController.h */,
+				04349CE120C2D5E10058FADB /* HHNextViewController.m */,
+				04349CCD20C2CE540058FADB /* Main.storyboard */,
+				04349CD020C2CE540058FADB /* Assets.xcassets */,
+				04349CD220C2CE540058FADB /* LaunchScreen.storyboard */,
+				04349CD520C2CE540058FADB /* Info.plist */,
+				04349CD620C2CE540058FADB /* main.m */,
+			);
+			path = HHMasonryDemo;
+			sourceTree = "<group>";
+		};
+		0A2BDF343644AF5E6CEC319C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A81E88D925B04E96CEE9B4C /* Pods-HHMasonryDemo.debug.xcconfig */,
+				F6445963F6B7E0A829D04DEB /* Pods-HHMasonryDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0AF15062B7F65A2F0F242B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7A89987826CAD01B22EA4E /* libPods-HHMasonryDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04349CC320C2CE530058FADB /* HHMasonryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04349CDA20C2CE540058FADB /* Build configuration list for PBXNativeTarget "HHMasonryDemo" */;
+			buildPhases = (
+				5E6641329F35EAAF9ACEABFF /* [CP] Check Pods Manifest.lock */,
+				04349CC020C2CE530058FADB /* Sources */,
+				04349CC120C2CE530058FADB /* Frameworks */,
+				04349CC220C2CE530058FADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHMasonryDemo;
+			productName = HHMasonryDemo;
+			productReference = 04349CC420C2CE530058FADB /* HHMasonryDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04349CBC20C2CE530058FADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Now;
+				TargetAttributes = {
+					04349CC320C2CE530058FADB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04349CBF20C2CE530058FADB /* Build configuration list for PBXProject "HHMasonryDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04349CBB20C2CE530058FADB;
+			productRefGroup = 04349CC520C2CE530058FADB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04349CC320C2CE530058FADB /* HHMasonryDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04349CC220C2CE530058FADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04349CD420C2CE540058FADB /* LaunchScreen.storyboard in Resources */,
+				04349CD120C2CE540058FADB /* Assets.xcassets in Resources */,
+				04349CCF20C2CE540058FADB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E6641329F35EAAF9ACEABFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHMasonryDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04349CC020C2CE530058FADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04349CE220C2D5E10058FADB /* HHNextViewController.m in Sources */,
+				04349CCC20C2CE540058FADB /* ViewController.m in Sources */,
+				04349CE820C3C8870058FADB /* HHBaseTableViewCell.m in Sources */,
+				04349CD720C2CE540058FADB /* main.m in Sources */,
+				04349CEE20C3F72B0058FADB /* HHHeadView.m in Sources */,
+				04349CE520C3C8720058FADB /* HHBaseView.m in Sources */,
+				04349CC920C2CE530058FADB /* AppDelegate.m in Sources */,
+				04349CDF20C2CF310058FADB /* HHBaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04349CCD20C2CE540058FADB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04349CCE20C2CE540058FADB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04349CD220C2CE540058FADB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04349CD320C2CE540058FADB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04349CD820C2CE540058FADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04349CD920C2CE540058FADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04349CDB20C2CE540058FADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A81E88D925B04E96CEE9B4C /* Pods-HHMasonryDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YM2MZ34492;
+				INFOPLIST_FILE = HHMasonryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunpiao.HHMasonryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04349CDC20C2CE540058FADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6445963F6B7E0A829D04DEB /* Pods-HHMasonryDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YM2MZ34492;
+				INFOPLIST_FILE = HHMasonryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunpiao.HHMasonryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04349CBF20C2CE530058FADB /* Build configuration list for PBXProject "HHMasonryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04349CD820C2CE540058FADB /* Debug */,
+				04349CD920C2CE540058FADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04349CDA20C2CE540058FADB /* Build configuration list for PBXNativeTarget "HHMasonryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04349CDB20C2CE540058FADB /* Debug */,
+				04349CDC20C2CE540058FADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04349CBC20C2CE530058FADB /* Project object */;
+}
