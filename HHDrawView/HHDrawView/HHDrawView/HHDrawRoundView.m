@@ -23,6 +23,7 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(20, 20, 200, 200) cornerRadius:100];
     [[UIColor greenColor] set];
     [path stroke];
+    
 //    [path fill];
 }
 - (void)addRound2 {

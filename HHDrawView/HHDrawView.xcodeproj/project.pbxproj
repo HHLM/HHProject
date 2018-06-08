@@ -10,9 +10,6 @@
 		044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044215F220CA1BA7000847A0 /* AppDelegate.m */; };
 		044215F620CA1BA7000847A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044215F520CA1BA7000847A0 /* ViewController.m */; };
 		044215F920CA1BA7000847A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044215F720CA1BA7000847A0 /* Main.storyboard */; };
-		044215FB20CA1BA7000847A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044215FA20CA1BA7000847A0 /* Assets.xcassets */; };
-		044215FE20CA1BA7000847A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044215FC20CA1BA7000847A0 /* LaunchScreen.storyboard */; };
-		0442160120CA1BA7000847A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442160020CA1BA7000847A0 /* main.m */; };
 		0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442160720CA1BC9000847A0 /* HHDrawViewController.m */; };
 		0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442160C20CA1BD0000847A0 /* HHDrawRoundView.m */; };
 		0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442160D20CA1BD0000847A0 /* HHDrawTextView.m */; };
@@ -21,6 +18,9 @@
 		0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442161420CA1BD0000847A0 /* HHDrawImageView.m */; };
 		0442161C20CA1BD0000847A0 /* HHDrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442161620CA1BD0000847A0 /* HHDrawRectView.m */; };
 		0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442161D20CA1C3F000847A0 /* HHBaseViewController.m */; };
+		0442162820CA1F1A000847A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0442162220CA1F1A000847A0 /* Assets.xcassets */; };
+		0442162920CA1F1A000847A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0442162320CA1F1A000847A0 /* LaunchScreen.storyboard */; };
+		0442162B20CA1F1A000847A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442162720CA1F1A000847A0 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,7 @@
 		044215F420CA1BA7000847A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		044215F520CA1BA7000847A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		044215F820CA1BA7000847A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		044215FA20CA1BA7000847A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		044215FD20CA1BA7000847A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044215FF20CA1BA7000847A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0442160020CA1BA7000847A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0442160720CA1BC9000847A0 /* HHDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawViewController.m; sourceTree = "<group>"; };
 		0442160820CA1BC9000847A0 /* HHDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDrawViewController.h; sourceTree = "<group>"; };
 		0442160B20CA1BD0000847A0 /* HHBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseView.h; sourceTree = "<group>"; };
@@ -50,6 +47,9 @@
 		0442161620CA1BD0000847A0 /* HHDrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawRectView.m; sourceTree = "<group>"; };
 		0442161D20CA1C3F000847A0 /* HHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseViewController.m; sourceTree = "<group>"; };
 		0442161E20CA1C3F000847A0 /* HHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseViewController.h; sourceTree = "<group>"; };
+		0442162220CA1F1A000847A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0442162420CA1F1A000847A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0442162720CA1F1A000847A0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +91,7 @@
 				0442160720CA1BC9000847A0 /* HHDrawViewController.m */,
 				0442161E20CA1C3F000847A0 /* HHBaseViewController.h */,
 				0442161D20CA1C3F000847A0 /* HHBaseViewController.m */,
-				044215F720CA1BA7000847A0 /* Main.storyboard */,
-				044215FA20CA1BA7000847A0 /* Assets.xcassets */,
-				044215FC20CA1BA7000847A0 /* LaunchScreen.storyboard */,
-				044215FF20CA1BA7000847A0 /* Info.plist */,
-				0442160020CA1BA7000847A0 /* main.m */,
+				0442162C20CA1F54000847A0 /* Others */,
 			);
 			path = HHDrawView;
 			sourceTree = "<group>";
@@ -117,6 +113,18 @@
 				0442161420CA1BD0000847A0 /* HHDrawImageView.m */,
 			);
 			path = HHDrawView;
+			sourceTree = "<group>";
+		};
+		0442162C20CA1F54000847A0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				044215FF20CA1BA7000847A0 /* Info.plist */,
+				0442162320CA1F1A000847A0 /* LaunchScreen.storyboard */,
+				0442162220CA1F1A000847A0 /* Assets.xcassets */,
+				044215F720CA1BA7000847A0 /* Main.storyboard */,
+				0442162720CA1F1A000847A0 /* main.m */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044215FE20CA1BA7000847A0 /* LaunchScreen.storyboard in Resources */,
-				044215FB20CA1BA7000847A0 /* Assets.xcassets in Resources */,
+				0442162820CA1F1A000847A0 /* Assets.xcassets in Resources */,
+				0442162920CA1F1A000847A0 /* LaunchScreen.storyboard in Resources */,
 				044215F920CA1BA7000847A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,7 +200,6 @@
 			files = (
 				044215F620CA1BA7000847A0 /* ViewController.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
-				0442160120CA1BA7000847A0 /* main.m in Sources */,
 				0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
@@ -200,6 +207,7 @@
 				0442161A20CA1BD0000847A0 /* HHBaseView.m in Sources */,
 				0442161920CA1BD0000847A0 /* HHDrawLineView.m in Sources */,
 				0442161C20CA1BD0000847A0 /* HHDrawRectView.m in Sources */,
+				0442162B20CA1F1A000847A0 /* main.m in Sources */,
 				0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,10 +223,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		044215FC20CA1BA7000847A0 /* LaunchScreen.storyboard */ = {
+		0442162320CA1F1A000847A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				044215FD20CA1BA7000847A0 /* Base */,
+				0442162420CA1F1A000847A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
