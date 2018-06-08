@@ -46,7 +46,7 @@
 
 - (void)addRoundView {
     
-    CGPoint center = CGPointMake(200, 500);
+    CGPoint center = CGPointMake(self.width/2, 500);
     CGFloat starA = 0;
     CGFloat endA = 0;
     
@@ -77,7 +77,7 @@
 }
 
 - (void)addProgress1 {
-    CGPoint center = CGPointMake(200, 200);
+    CGPoint center = CGPointMake(self.width/2, 200);
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:starAngle endAngle:endAngle clockwise:YES];
     path.lineWidth = 3;
     [[UIColor redColor] set];

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIColor+Ext.h"
+#import "UIView+Ext.h"
 @interface HHBaseView : UIView
 
 @end

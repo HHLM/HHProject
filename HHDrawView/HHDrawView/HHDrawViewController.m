@@ -13,6 +13,7 @@
 #import "HHDrawTextView.h"
 #import "HHDrawImageView.h"
 #import "HHProgressView.h"
+#import "HHBarChartView.h"
 #import <objc/message.h>
 @interface HHDrawViewController ()
 
@@ -87,6 +88,11 @@
 - (void)addDrawView5 {
     HHProgressView *view = [[HHProgressView alloc] initWithFrame:self.view.bounds];
     [view star];
+    [self.view addSubview:view];
+}
+/** 柱状图📊 */
+- (void)addDrawView6 {
+    HHBarChartView *view = [[HHBarChartView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
 }
 

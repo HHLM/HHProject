@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431FB1120CAA76C00E14141 /* UIView+Ext.m */; };
+		0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431FB1520CAA9BE00E14141 /* HHBarChartView.m */; };
 		044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044215F220CA1BA7000847A0 /* AppDelegate.m */; };
 		044215F620CA1BA7000847A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044215F520CA1BA7000847A0 /* ViewController.m */; };
 		044215F920CA1BA7000847A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044215F720CA1BA7000847A0 /* Main.storyboard */; };
@@ -26,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0431FB1020CAA76C00E14141 /* UIView+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
+		0431FB1120CAA76C00E14141 /* UIView+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
+		0431FB1420CAA9BE00E14141 /* HHBarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBarChartView.h; sourceTree = "<group>"; };
+		0431FB1520CAA9BE00E14141 /* HHBarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBarChartView.m; sourceTree = "<group>"; };
 		044215EE20CA1BA7000847A0 /* HHDrawView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHDrawView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044215F120CA1BA7000847A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044215F220CA1BA7000847A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0431FB1320CAA87F00E14141 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0442163020CA6AC2000847A0 /* UIColor+Ext.h */,
+				0442163120CA6AC2000847A0 /* UIColor+Ext.m */,
+				0431FB1020CAA76C00E14141 /* UIView+Ext.h */,
+				0431FB1120CAA76C00E14141 /* UIView+Ext.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		044215E520CA1BA7000847A0 = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +136,9 @@
 				0442161420CA1BD0000847A0 /* HHDrawImageView.m */,
 				0442162D20CA5984000847A0 /* HHProgressView.h */,
 				0442162E20CA5984000847A0 /* HHProgressView.m */,
-				0442163020CA6AC2000847A0 /* UIColor+Ext.h */,
-				0442163120CA6AC2000847A0 /* UIColor+Ext.m */,
+				0431FB1420CAA9BE00E14141 /* HHBarChartView.h */,
+				0431FB1520CAA9BE00E14141 /* HHBarChartView.m */,
+				0431FB1320CAA87F00E14141 /* Category */,
 			);
 			path = HHDrawView;
 			sourceTree = "<group>";
@@ -209,9 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				044215F620CA1BA7000847A0 /* ViewController.m in Sources */,
+				0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
 				0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */,
 				0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */,
+				0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
 				044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */,
