@@ -37,7 +37,7 @@
 
 - (void)addRoundCharView {
     
-    CGPoint center = CGPointMake(self.width/2, self.height/4*3);
+    CGPoint center = CGPointMake(self.width/2, self.height/4.0 *3);
     CGFloat starA = 0;
     CGFloat endA = 0;
     
@@ -60,7 +60,7 @@
         endA = starA + addA;
         /** 描绘路径 */
         UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
-                                                            radius:100
+                                                            radius:self.height/8
                                                         startAngle:starA
                                                           endAngle:endA
                                                          clockwise:YES];

@@ -11,10 +11,10 @@
 @implementation UIView (Ext)
 
 - (CGFloat)width {
-    return CGRectGetWidth(self.bounds);
+    return CGRectGetWidth(self.frame);
 }
 - (CGFloat)height {
-    return CGRectGetHeight(self.bounds);
+    return CGRectGetHeight(self.frame);
 }
 - (void)setHeight:(CGFloat)height {
     CGRect rect = self.frame;
