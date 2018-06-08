@@ -12,6 +12,7 @@
 #import "HHDrawRoundView.h"
 #import "HHDrawTextView.h"
 #import "HHDrawImageView.h"
+#import "HHProgressView.h"
 #import <objc/message.h>
 @interface HHDrawViewController ()
 
@@ -80,6 +81,15 @@
 /** 画图片 */
 - (void)addDrawView4 {
     HHDrawImageView *view = [[HHDrawImageView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
+}
+/** 画圆形进度条 */
+- (void)addDrawView5 {
+    HHProgressView *view = [[HHProgressView alloc] initWithFrame:self.view.bounds];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [view star];
+    });
+    
     [self.view addSubview:view];
 }
 

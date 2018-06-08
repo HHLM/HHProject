@@ -24,7 +24,7 @@
 - (void)config {
     self.title = @"Quartz2D";
     self.navigationController.navigationBar.translucent = NO;
-    _titles= @[@[@"画线",@"画矩形",@"画圆形",@"画文字",@"画图片"]];
+    _titles= @[@[@"画线",@"画矩形",@"画圆形",@"画文字",@"画图片",@"圆形进度条"]];
 }
 - (UITableView *)myTableView
 {

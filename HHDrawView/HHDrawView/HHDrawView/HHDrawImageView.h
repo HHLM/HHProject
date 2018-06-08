@@ -10,4 +10,8 @@
 
 @interface HHDrawImageView : HHBaseView
 
+@property (nonatomic, strong) UIImage *image;
+
+- (instancetype)initWithImage:(UIImage *)image;
+
 @end

@@ -21,6 +21,8 @@
 		0442162820CA1F1A000847A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0442162220CA1F1A000847A0 /* Assets.xcassets */; };
 		0442162920CA1F1A000847A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0442162320CA1F1A000847A0 /* LaunchScreen.storyboard */; };
 		0442162B20CA1F1A000847A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442162720CA1F1A000847A0 /* main.m */; };
+		0442162F20CA5984000847A0 /* HHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442162E20CA5984000847A0 /* HHProgressView.m */; };
+		0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442163120CA6AC2000847A0 /* UIColor+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		0442162220CA1F1A000847A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0442162420CA1F1A000847A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0442162720CA1F1A000847A0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0442162D20CA5984000847A0 /* HHProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHProgressView.h; sourceTree = "<group>"; };
+		0442162E20CA5984000847A0 /* HHProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHProgressView.m; sourceTree = "<group>"; };
+		0442163020CA6AC2000847A0 /* UIColor+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
+		0442163120CA6AC2000847A0 /* UIColor+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 				0442160D20CA1BD0000847A0 /* HHDrawTextView.m */,
 				0442160E20CA1BD0000847A0 /* HHDrawImageView.h */,
 				0442161420CA1BD0000847A0 /* HHDrawImageView.m */,
+				0442162D20CA5984000847A0 /* HHProgressView.h */,
+				0442162E20CA5984000847A0 /* HHProgressView.m */,
+				0442163020CA6AC2000847A0 /* UIColor+Ext.h */,
+				0442163120CA6AC2000847A0 /* UIColor+Ext.m */,
 			);
 			path = HHDrawView;
 			sourceTree = "<group>";
@@ -200,6 +210,7 @@
 			files = (
 				044215F620CA1BA7000847A0 /* ViewController.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
+				0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */,
 				0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
@@ -209,6 +220,7 @@
 				0442161C20CA1BD0000847A0 /* HHDrawRectView.m in Sources */,
 				0442162B20CA1F1A000847A0 /* main.m in Sources */,
 				0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */,
+				0442162F20CA5984000847A0 /* HHProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
