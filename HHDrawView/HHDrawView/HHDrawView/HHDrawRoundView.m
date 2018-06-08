@@ -18,6 +18,38 @@
     [self addRound2];
     [self addRound3];
     [self addRound4];
+    [self addRound5];
+}
+/** 画椭圆 */
+- (void)addRound5 {
+    /** 1.获取图形上下文 */
+    CGContextRef ctx =UIGraphicsGetCurrentContext();
+    /** 2.描绘路径 */
+    UIBezierPath *path =[UIBezierPath bezierPathWithOvalInRect:CGRectMake(100, self.height - 200, 200, 100)];
+    
+    /** 保存当前图形上下文状态 */
+    CGContextSaveGState(ctx);
+    
+    [[UIColor brownColor] set];
+    /** 平移 */
+    CGContextTranslateCTM(ctx, 100, 10);
+    /** 图形缩放 */
+//    CGContextScaleCTM(ctx, 0.5, 0.5);
+    /** 图形旋转 */
+//    CGContextRotateCTM(ctx, M_PI_2);
+    
+    /** 3.添加到图形上下文 */
+    CGContextAddPath(ctx, path.CGPath);
+    /** 4.渲染图形上下文 填充整个区域 */
+    CGContextFillPath(ctx);
+    
+    /** 恢复之前保存的图形上下文状态 */
+    CGContextRestoreGState(ctx);
+    path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, self.height - 200, 100, 80)];
+    CGContextAddPath(ctx, path.CGPath);
+    /** 描边 */
+    CGContextStrokePath(ctx);
+    
 }
 - (void)addRound1 {
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(20, 20, 200, 200) cornerRadius:100];

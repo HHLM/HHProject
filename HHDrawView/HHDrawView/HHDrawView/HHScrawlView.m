@@ -26,32 +26,23 @@ static CGFloat const topLimits = 60;
 
 - (UIButton *)leftBtn {
     if (!_leftBtn) {
-        _leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _leftBtn = [UIButton initWithTitle:@"清除" fontSize:17 textColor:[UIColor blueColor] target:self seletor:@selector(clear)];
         [_leftBtn setFrame:CGRectMake(10, top, 60, 40)];
-        [_leftBtn setTitle:@"清除" forState:UIControlStateNormal];
-        [_leftBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [_leftBtn addTarget:self action:@selector(clear) forControlEvents:UIControlEventTouchUpInside];
     }
     return _leftBtn;
 }
 
 - (UIButton *)middleBtn {
     if (!_middleBtn) {
-        _middleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _middleBtn = [UIButton initWithTitle:@"退后" fontSize:17 textColor:[UIColor blueColor] target:self seletor:@selector(back)];
         [_middleBtn setFrame:CGRectMake(CGRectGetWidth(self.frame)/2 -30, top, 60, 40)];
-        [_middleBtn setTitle:@"退后" forState:UIControlStateNormal];
-        [_middleBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [_middleBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     }
     return _middleBtn;
 }
 - (UIButton *)rightBtn {
     if (!_rightBtn) {
-        _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _rightBtn = [UIButton initWithTitle:@"退后" fontSize:17 textColor:[UIColor blueColor] target:self seletor:@selector(save)];
         [_rightBtn setFrame:CGRectMake(CGRectGetWidth(self.frame)-70, top, 60, 40)];
-        [_rightBtn setTitle:@"保存" forState:UIControlStateNormal];
-        [_rightBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [_rightBtn addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
     }
     return _rightBtn;
 }

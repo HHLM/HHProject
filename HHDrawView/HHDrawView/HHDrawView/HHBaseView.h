@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIColor+Ext.h"
-#import "UIView+Ext.h"
+#import "HHCategoryHeader.h"
 @interface HHBaseView : UIView
 
 @end
