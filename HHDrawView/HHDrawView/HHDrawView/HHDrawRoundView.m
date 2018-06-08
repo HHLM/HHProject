@@ -22,9 +22,10 @@
 - (void)addRound1 {
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(20, 20, 200, 200) cornerRadius:100];
     [[UIColor greenColor] set];
-    [path stroke];
     
-//    [path fill];
+//    [path stroke];
+    
+    [path fill];
 }
 - (void)addRound2 {
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(250, 120) radius:100 startAngle:0 endAngle:M_PI * 2 clockwise:YES];

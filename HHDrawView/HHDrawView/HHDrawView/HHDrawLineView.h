@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface HHDrawLineView : UIView
+#import "HHBaseView.h"
+@interface HHDrawLineView : HHBaseView
 
 @end

@@ -39,8 +39,46 @@
     [self addLine6];
     [self addLine7];
     [self addLine8];
+    [self addLine9];
+    [self addLine10];
 }
 
+/** 虚线 */
+- (void)addLine10 {
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    
+    path.lineWidth = 1;
+    
+    //曲线间隙和长度都是5
+    CGFloat length[] = {5 ,5};
+    
+    [path setLineDash:length count:2 phase:0];
+    
+    [path moveToPoint:CGPointMake(0, 0)];
+    
+    [path addLineToPoint:CGPointMake(self.width, self.height)];
+    
+    [[UIColor redColor] set];
+    
+    [path stroke];
+}
+
+/** 虚线 */
+- (void)addLine9 {
+    CGContextRef   ctx = UIGraphicsGetCurrentContext();
+    
+    CGFloat lengths[] = {5,5};
+    CGContextSetLineDash(ctx, 0, lengths, 2); //虚线
+    CGContextSetLineWidth(ctx, 1);
+    CGContextSetLineCap(ctx, kCGLineCapRound);//线的拐角
+    CGContextSetStrokeColorWithColor(ctx, [UIColor purpleColor].CGColor);
+    CGContextMoveToPoint(ctx,0 ,500);
+    CGContextAddLineToPoint(ctx, self.width, 0);
+    CGContextStrokePath(ctx);
+    //关闭 后面的不受影响
+    CGContextClosePath(ctx);
+}
 
 - (void)addLine8 {
     /** 设置中心点 */
@@ -200,6 +238,7 @@
     CGContextSetRGBStrokeColor(ctx, 0, 1, 0, 1);
     
     CGContextStrokePath(ctx);
+    CGContextClosePath(ctx);
 }
 
 - (void)addLine1 {
@@ -221,12 +260,13 @@
     
     CGContextAddPath(ctx, pathRef);
     
-    /** 4、把图形上下文渲染到试图上展示 */
+    /** 4、把图形上下文渲染到视图上展示 */
     
     //渲染的颜色
     CGContextSetRGBStrokeColor(ctx, 1, 0, 0, 1);
     
     CGContextStrokePath(ctx);
+    CGContextSaveGState(ctx);
     
 }
 
