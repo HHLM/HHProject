@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431FB1120CAA76C00E14141 /* UIView+Ext.m */; };
 		0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431FB1520CAA9BE00E14141 /* HHBarChartView.m */; };
+		0431FB1920CAEBDF00E14141 /* HHScrawlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431FB1820CAEBDF00E14141 /* HHScrawlView.m */; };
 		044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044215F220CA1BA7000847A0 /* AppDelegate.m */; };
 		044215F620CA1BA7000847A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044215F520CA1BA7000847A0 /* ViewController.m */; };
 		044215F920CA1BA7000847A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044215F720CA1BA7000847A0 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 		0431FB1120CAA76C00E14141 /* UIView+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
 		0431FB1420CAA9BE00E14141 /* HHBarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBarChartView.h; sourceTree = "<group>"; };
 		0431FB1520CAA9BE00E14141 /* HHBarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBarChartView.m; sourceTree = "<group>"; };
+		0431FB1720CAEBDF00E14141 /* HHScrawlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHScrawlView.h; sourceTree = "<group>"; };
+		0431FB1820CAEBDF00E14141 /* HHScrawlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHScrawlView.m; sourceTree = "<group>"; };
 		044215EE20CA1BA7000847A0 /* HHDrawView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHDrawView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044215F120CA1BA7000847A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044215F220CA1BA7000847A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				0442162E20CA5984000847A0 /* HHProgressView.m */,
 				0431FB1420CAA9BE00E14141 /* HHBarChartView.h */,
 				0431FB1520CAA9BE00E14141 /* HHBarChartView.m */,
+				0431FB1720CAEBDF00E14141 /* HHScrawlView.h */,
+				0431FB1820CAEBDF00E14141 /* HHScrawlView.m */,
 				0431FB1320CAA87F00E14141 /* Category */,
 			);
 			path = HHDrawView;
@@ -226,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0431FB1920CAEBDF00E14141 /* HHScrawlView.m in Sources */,
 				044215F620CA1BA7000847A0 /* ViewController.m in Sources */,
 				0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
