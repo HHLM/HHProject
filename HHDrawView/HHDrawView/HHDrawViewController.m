@@ -86,6 +86,7 @@
 /** 画圆形进度条 */
 - (void)addDrawView5 {
     HHProgressView *view = [[HHProgressView alloc] initWithFrame:self.view.bounds];
+    [view star];
     [self.view addSubview:view];
 }
 

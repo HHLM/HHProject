@@ -57,7 +57,7 @@
         //计算每个扇形占比 的角度
         CGFloat addA = [number floatValue]/100 * M_PI*2;
         /** 计算结束角度 */
-        endA = starAngle + addA;
+        endA = starA + addA;
         /** 描绘路径 */
         UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
                                                             radius:100
