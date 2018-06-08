@@ -86,10 +86,6 @@
 /** 画圆形进度条 */
 - (void)addDrawView5 {
     HHProgressView *view = [[HHProgressView alloc] initWithFrame:self.view.bounds];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [view star];
-    });
-    
     [self.view addSubview:view];
 }
 
