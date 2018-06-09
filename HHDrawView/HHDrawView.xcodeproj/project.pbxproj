@@ -27,6 +27,9 @@
 		0442162B20CA1F1A000847A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442162720CA1F1A000847A0 /* main.m */; };
 		0442162F20CA5984000847A0 /* HHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442162E20CA5984000847A0 /* HHProgressView.m */; };
 		0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442163120CA6AC2000847A0 /* UIColor+Ext.m */; };
+		0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442163520CB83C3000847A0 /* HHGraphicsViewController.m */; };
+		0442163920CB860B000847A0 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163720CB860A000847A0 /* 111.jpg */; };
+		0442163A20CB860B000847A0 /* 222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163820CB860A000847A0 /* 222.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,10 @@
 		0442162E20CA5984000847A0 /* HHProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHProgressView.m; sourceTree = "<group>"; };
 		0442163020CA6AC2000847A0 /* UIColor+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
 		0442163120CA6AC2000847A0 /* UIColor+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
+		0442163420CB83C3000847A0 /* HHGraphicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHGraphicsViewController.h; sourceTree = "<group>"; };
+		0442163520CB83C3000847A0 /* HHGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHGraphicsViewController.m; sourceTree = "<group>"; };
+		0442163720CB860A000847A0 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
+		0442163820CB860A000847A0 /* 222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,8 @@
 		044215E520CA1BA7000847A0 = {
 			isa = PBXGroup;
 			children = (
+				0442163720CB860A000847A0 /* 111.jpg */,
+				0442163820CB860A000847A0 /* 222.jpeg */,
 				044215F020CA1BA7000847A0 /* HHDrawView */,
 				044215EF20CA1BA7000847A0 /* Products */,
 			);
@@ -115,6 +124,7 @@
 		044215F020CA1BA7000847A0 /* HHDrawView */ = {
 			isa = PBXGroup;
 			children = (
+				0442163320CB8344000847A0 /* HHContextView */,
 				0442160A20CA1BD0000847A0 /* HHDrawView */,
 				044215F120CA1BA7000847A0 /* AppDelegate.h */,
 				044215F220CA1BA7000847A0 /* AppDelegate.m */,
@@ -165,6 +175,15 @@
 				0442162720CA1F1A000847A0 /* main.m */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		0442163320CB8344000847A0 /* HHContextView */ = {
+			isa = PBXGroup;
+			children = (
+				0442163420CB83C3000847A0 /* HHGraphicsViewController.h */,
+				0442163520CB83C3000847A0 /* HHGraphicsViewController.m */,
+			);
+			path = HHContextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0442162820CA1F1A000847A0 /* Assets.xcassets in Resources */,
+				0442163A20CB860B000847A0 /* 222.jpeg in Resources */,
+				0442163920CB860B000847A0 /* 111.jpg in Resources */,
 				0442162920CA1F1A000847A0 /* LaunchScreen.storyboard in Resources */,
 				044215F920CA1BA7000847A0 /* Main.storyboard in Resources */,
 			);
@@ -247,6 +268,7 @@
 				0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
+				0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */,
 				044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */,
 				0442161A20CA1BD0000847A0 /* HHBaseView.m in Sources */,
 				0431FB1C20CAF56C00E14141 /* UIButton+Ext.m in Sources */,
