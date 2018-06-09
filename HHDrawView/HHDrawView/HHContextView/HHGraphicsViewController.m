@@ -20,14 +20,12 @@
     if (_index == 0) {
          [self drawImageContext];
     }
-   
 }
 
 - (UIImageView *)imgView {
     if (!_imgView) {
         _imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
         _imgView.backgroundColor = [UIColor cyanColor];
-//        _imgView.contentMode = UIViewContentModeCenter;
     }return _imgView;
 }
 
@@ -39,17 +37,20 @@
         void(*func)(id,SEL) = (void *)imp;
         func(self,selector);
     }
-    
     [self updateImageView];
 }
 - (void)imageContext0 {
+    _imgView.contentMode = UIViewContentModeCenter;
     [self drawImageContext];
 }
 - (void)imageContext1 {
-    self.imgView.frame = CGRectMake(0, 100, self.view.width, self.view.width);
     [self clipImageContext];
     
 }
+- (void)imageContext2 {
+    [self clipRoundImage];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,12 +62,21 @@
     self.imgView.image = _image;
 }
 
+#pragma mark -- 截取带圆环的图片
+/** 截取圆环图片 */
+- (void)clipRoundImage {
+    _imgView.frame = CGRectMake(0,100, self.view.width, self.view.width);
+    UIImage *image = [UIImage imageNamed:@"111.jpg"];
+    _image = [UIImage clipCirqueImage:image cirqueColor:[UIColor purpleColor] border:10];
+    
+}
+
 #pragma mark -- 图片裁剪
 /** 图片裁剪 */
 - (void)clipImageContext {
-    
+    self.imgView.frame = CGRectMake(0, 100, self.view.width, self.view.width);
     UIImage *image = [UIImage imageNamed:@"111.jpg"];
-    _image = [UIImage clipRoundImage:image];
+    _image = [UIImage clipRoundImage:image scacle:-0.6];
 }
 
 #pragma mark -- 图片添加水印
