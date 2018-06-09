@@ -11,4 +11,5 @@
 #import "UIColor+Ext.h"
 #import "UIView+Ext.h"
 #import "UIButton+Ext.h"
+#import "UIImage+Ext.h"
 #endif /* HHCategoryHeader_h */

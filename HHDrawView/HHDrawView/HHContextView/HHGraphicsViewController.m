@@ -17,28 +17,56 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self drawImageContext];
+    if (_index == 0) {
+         [self drawImageContext];
+    }
+   
 }
 
 - (UIImageView *)imgView {
     if (!_imgView) {
         _imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-        _imgView.contentMode = UIViewContentModeCenter;
+        _imgView.backgroundColor = [UIColor cyanColor];
+//        _imgView.contentMode = UIViewContentModeCenter;
     }return _imgView;
+}
+
+
+- (void)respondsSelectorIndex:(NSInteger)index {
+    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"imageContext%ld",index]);
+    if (selector) {
+        IMP imp =  [self methodForSelector:selector];
+        void(*func)(id,SEL) = (void *)imp;
+        func(self,selector);
+    }
+    
+    [self updateImageView];
+}
+- (void)imageContext0 {
+    [self drawImageContext];
+}
+- (void)imageContext1 {
+    self.imgView.frame = CGRectMake(0, 100, self.view.width, self.view.width);
+    [self clipImageContext];
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self drawImageContext];
     [self.view addSubview:self.imgView];
-//    self.imgView.image = [UIImage imageNamed:@"222.jpeg"];
-    
+    [self respondsSelectorIndex:_index];
+}
+/** 更新 */
+- (void)updateImageView {
+    self.imgView.image = _image;
 }
 
 #pragma mark -- 图片裁剪
 /** 图片裁剪 */
 - (void)clipImageContext {
     
+    UIImage *image = [UIImage imageNamed:@"111.jpg"];
+    _image = [UIImage clipRoundImage:image];
 }
 
 #pragma mark -- 图片添加水印

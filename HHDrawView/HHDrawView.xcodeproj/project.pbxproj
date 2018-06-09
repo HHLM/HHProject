@@ -30,6 +30,7 @@
 		0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442163520CB83C3000847A0 /* HHGraphicsViewController.m */; };
 		0442163920CB860B000847A0 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163720CB860A000847A0 /* 111.jpg */; };
 		0442163A20CB860B000847A0 /* 222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163820CB860A000847A0 /* 222.jpeg */; };
+		049D2C8B20CBB13400D9E82B /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		0442163520CB83C3000847A0 /* HHGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHGraphicsViewController.m; sourceTree = "<group>"; };
 		0442163720CB860A000847A0 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
 		0442163820CB860A000847A0 /* 222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpeg; sourceTree = "<group>"; };
+		049D2C8920CBB13400D9E82B /* UIImage+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
+		049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				0431FB1020CAA76C00E14141 /* UIView+Ext.h */,
 				0431FB1120CAA76C00E14141 /* UIView+Ext.m */,
 				0431FB1D20CAF71000E14141 /* HHCategoryHeader.h */,
+				049D2C8920CBB13400D9E82B /* UIImage+Ext.h */,
+				049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
+				049D2C8B20CBB13400D9E82B /* UIImage+Ext.m in Sources */,
 				0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */,
 				044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */,
 				0442161A20CA1BD0000847A0 /* HHBaseView.m in Sources */,

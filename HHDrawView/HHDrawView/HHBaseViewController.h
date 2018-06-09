@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HHCategoryHeader.h"
 @interface HHBaseViewController : UIViewController
 
 @end
