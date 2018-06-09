@@ -9,5 +9,5 @@
 #import "HHBaseViewController.h"
 
 @interface HHGraphicsViewController : HHBaseViewController
-
+@property (nonatomic, assign) NSInteger index;
 @end
