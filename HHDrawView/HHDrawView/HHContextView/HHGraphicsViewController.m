@@ -7,10 +7,14 @@
 //
 
 #import "HHGraphicsViewController.h"
-
+#import "AppDelegate.h"
 @interface HHGraphicsViewController ()
 @property (nonatomic, strong) UIImageView *imgView;
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic, assign) CGPoint starPoint;
+@property (nonatomic, strong) UIView *currentView;
+@property (nonatomic, strong) UIImageView *topImgView;
+
 @end
 
 @implementation HHGraphicsViewController
@@ -21,15 +25,26 @@
          [self drawImageContext];
     }
 }
-
+- (UIView *)currentView {
+    if (!_currentView) {
+        _currentView = [[UIView alloc] init];
+        _currentView.backgroundColor = [UIColor redColor];
+        _currentView.alpha = 0.3;
+        [self.view addSubview:_currentView];
+    }return _currentView;
+}
 - (UIImageView *)imgView {
     if (!_imgView) {
         _imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
         _imgView.backgroundColor = [UIColor cyanColor];
     }return _imgView;
 }
-
-
+- (UIImageView *)topImgView {
+    if (!_topImgView) {
+        _topImgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+        _topImgView.backgroundColor = [UIColor clearColor];
+    }return _topImgView;
+}
 - (void)respondsSelectorIndex:(NSInteger)index {
     SEL selector = NSSelectorFromString([NSString stringWithFormat:@"imageContext%ld",index]);
     if (selector) {
@@ -37,7 +52,7 @@
         void(*func)(id,SEL) = (void *)imp;
         func(self,selector);
     }
-    [self updateImageView];
+//    [self updateImageView];
 }
 - (void)imageContext0 {
     _imgView.contentMode = UIViewContentModeCenter;
@@ -51,6 +66,83 @@
     [self clipRoundImage];
 }
 
+- (void)imageContext3 {
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    UINavigationController *nav = (UINavigationController *)app.window.rootViewController;
+    [self screenShot:app.window];
+}
+- (void)imageContext4 {
+    _image = [UIImage imageNamed:@"111.jpg"];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panCustomRect:)];
+    [self.view addGestureRecognizer:pan];
+}
+- (void)imageContext5 {
+    [self.view addSubview:self.imgView];
+    [self.view addSubview:self.topImgView];
+    
+    self.topImgView.image = [UIImage imageNamed:@"222.jpeg"];
+    _image = [UIImage imageNamed:@"111.jpg"];
+    self.imgView.image = _image;
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [self.view addGestureRecognizer:pan];
+}
+
+- (void)pan:(UIPanGestureRecognizer *)pan {
+    CGPoint starP = [pan locationInView:self.view];
+    CGFloat maxW = 30.0;
+    CGRect rect = CGRectMake(starP.x-maxW/2, starP.y-maxW/2, maxW, maxW);
+    
+    UIGraphicsBeginImageContextWithOptions(self.topImgView.frame.size, NO, 0);
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:rect];
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    //渲染到图形上下文
+    [self.topImgView.layer renderInContext:ctx];
+    //清除区域内的图片
+    CGContextClearRect(ctx, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    self.topImgView.image = image;
+    UIGraphicsEndImageContext();
+    
+}
+
+- (void)panCustomRect:(UIPanGestureRecognizer *)pan {
+    
+    CGPoint endPoint;
+    //开始时候获取起始坐标
+    if (pan.state == UIGestureRecognizerStateBegan) {
+        _starPoint = [pan locationInView:self.view];
+    }else if (pan.state == UIGestureRecognizerStateChanged) {
+        endPoint = [pan locationInView:self.view];
+        CGFloat w = endPoint.x - _starPoint.x;
+        CGFloat h = endPoint.y - _starPoint.y;
+        //获取选取图片区域
+        [self.currentView setFrame:CGRectMake(_starPoint.x, _starPoint.y, w, h)];
+    }else {
+        UIGraphicsBeginImageContextWithOptions(self.imgView.frame.size, false, 0);
+       
+        //裁剪区域 选择区域的大小
+        UIBezierPath *path = [UIBezierPath bezierPathWithRect:self.currentView.frame];
+        [path addClip];
+        //获取图形上下文
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        //渲染到图形上下文
+        [self.imgView.layer renderInContext:ctx];
+        
+        _image  = UIGraphicsGetImageFromCurrentImageContext();
+        
+        self.imgView.image = _image;
+        /** 关闭图形上下文 */
+        UIGraphicsEndImageContext();
+        /** 移除选择区域框 */
+        [_currentView removeFromSuperview];
+        
+        _currentView = nil;
+    }
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -60,6 +152,24 @@
 /** 更新 */
 - (void)updateImageView {
     self.imgView.image = _image;
+}
+
+#pragma mark -- 手动截图
+
+#pragma mark -- 屏幕截屏
+/** 屏幕截屏 */
+- (void)screenShot:(UIView *)view {
+
+    _image = [UIImage screenShotView:view contentRect:CGRectMake(0, 64, self.view.width,400)];
+    _image = [UIImage screenShotView:view];
+    
+    //转成png图片  比较清晰
+    //NSData *data = UIImagePNGRepresentation(_image);
+    
+    //保存图片到某个位置
+    //[data writeToFile:@"/Users/mac/Desktop/PAN/hh.png" atomically:YES];
+    
+    
 }
 
 #pragma mark -- 截取带圆环的图片
@@ -75,7 +185,7 @@
 /** 图片裁剪 */
 - (void)clipImageContext {
     self.imgView.frame = CGRectMake(0, 100, self.view.width, self.view.width);
-    UIImage *image = [UIImage imageNamed:@"111.jpg"];
+    UIImage *image = [UIImage imageNamed:@"222.jpeg"];
     _image = [UIImage clipRoundImage:image scacle:-0.6];
 }
 

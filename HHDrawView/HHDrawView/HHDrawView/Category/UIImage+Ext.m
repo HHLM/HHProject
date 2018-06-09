@@ -138,5 +138,133 @@
     return image;
 }
 
+#pragma mark -- 截屏
+
+/**
+ 截取某个控件图形
+ @param view 需要被截取的控件
+ @return image
+ */
++ (UIImage *)screenShotView:(UIView *)view {
+    
+    /** 开启位图图形上下文 */
+    UIGraphicsBeginImageContextWithOptions(view.frame.size, false, 0);
+    
+    /** 获取图形上下文 */
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    /** view渲染到图形上下文 */
+    [view.layer renderInContext:ctx];
+    
+    /** 得到图片 */
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    /** 关闭位图图形上下文 */
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+/**
+ 截取某个控件图形
+ @param view 需要被截取的控件
+ @param contentRect 截取需要的内容区域大小
+ @return image
+ */
++ (UIImage *)screenShotView:(UIView *)view contentRect:(CGRect)contentRect {
+   
+    
+    /** 开启位图图形上下文 */
+    UIGraphicsBeginImageContextWithOptions(view.frame.size, false, 0);
+    
+    /** 获取图形上下文 */
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    /** view渲染到图形上下文 */
+    [view.layer renderInContext:ctx];
+    
+    /** 得到图片 */
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    /** 保存图片到某个地方 */
+    NSData *data = UIImagePNGRepresentation(image);
+    [data writeToFile:@"/Users/mac/Desktop/PAN/1.png" atomically:YES];
+    
+    
+    //小于view的区域 就截图
+    if ((view.frame.size.width > contentRect.size.width) || (view.frame.size.height > contentRect.size.height)) {
+      
+        UIGraphicsEndImageContext();
+        
+        CGImageRef ref = [image CGImage];
+        
+        CGFloat scale =  [UIScreen mainScreen].scale;
+        
+        CGRect clipRect = CGRectMake(scale*contentRect.origin.x, scale*contentRect.origin.y, scale*contentRect.size.width, scale*contentRect.size.height);
+        
+        ref = CGImageCreateWithImageInRect(ref,clipRect);
+        
+        image = [UIImage imageWithCGImage:ref];
+       
+        NSData *data = UIImagePNGRepresentation(image);
+        
+        [data writeToFile:@"/Users/mac/Desktop/PAN/2.png" atomically:YES];
+        
+        UIGraphicsEndImageContext();
+        
+    }else {
+         UIGraphicsEndImageContext();
+        return image;
+    }
+    return image;
+}
+
+/**
+ 截取scrollView全部内容
+ @param scrollView 被截图的控件
+ @return image
+ */
++ (UIImage *)screenShotScrollView:(UIScrollView *)scrollView {
+    
+    CGFloat width = scrollView.bounds.size.width;
+    
+    CGFloat height = scrollView.bounds.size.height;
+    
+    CGPoint offset = scrollView.contentOffset;
+    
+    CGFloat contentHeight = scrollView.contentSize.height;
+    
+    CGSize size = CGSizeMake(width, contentHeight);
+    
+    // 可变数组
+    NSMutableArray *images = [NSMutableArray array];
+    
+    while (contentHeight > 0) {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0);
+        
+        [scrollView.layer renderInContext:UIGraphicsGetCurrentContext()];
+        
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        
+        [images addObject:image];
+        
+        CGFloat offsetY = offset.y;
+        
+        [scrollView setContentOffset:CGPointMake(0, offsetY + height)];
+        
+        contentHeight -= height;
+    }
+    
+    [images enumerateObjectsUsingBlock:^(UIImage * obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj drawInRect:CGRectMake(0, idx * height, width, height)];
+    }];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
 
 @end

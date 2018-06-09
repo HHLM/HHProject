@@ -26,7 +26,7 @@
     self.title = @"Quartz2D";
     self.navigationController.navigationBar.translucent = NO;
     _titles= @[@[@"画线",@"画矩形",@"画圆形",@"画文字",@"画图片",@"圆形进度条和饼状图",@"柱状图📊",@"涂鸦"],
-               @[@"图片水印",@"圆形图片剪切",@"呆圆环的圆形图片剪切"]];
+               @[@"图片水印",@"圆形图片剪切",@"带圆环的圆形图片剪切",@"屏幕截图",@"手动选择区域截图",@"图片擦除"]];
 }
 - (UITableView *)myTableView {
     if (!_myTableView) {

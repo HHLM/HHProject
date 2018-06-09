@@ -52,4 +52,28 @@
  */
 + (UIImage *)clipCirqueImage:(UIImage *)image cirqueColor:(UIColor *)cirqueColor border:(CGFloat)border;
 
+#pragma mark -- 截屏
+
+/**
+ 截取某个控件图形
+ @param view 需要被截取的控件
+ @return image
+ */
++ (UIImage *)screenShotView:(UIView *)view;
+
+/**
+ 截取某个控件图形
+ @param view 需要被截取的控件
+ @param contentRect 截取需要的内容区域大小
+ @return image
+ */
++ (UIImage *)screenShotView:(UIView *)view contentRect:(CGRect)contentRect;
+
+/**
+ 截取scrollView全部内容
+ @param scrollView UIScrollView的类
+ @return image
+ */
++ (UIImage *)screenShotScrollView:(UIScrollView *)scrollView;
+
 @end
