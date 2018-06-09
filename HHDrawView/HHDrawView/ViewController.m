@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HHDrawViewController.h"
+#import "HHGraphicsViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) NSArray *titles;
@@ -24,7 +25,8 @@
 - (void)config {
     self.title = @"Quartz2D";
     self.navigationController.navigationBar.translucent = NO;
-    _titles= @[@[@"画线",@"画矩形",@"画圆形",@"画文字",@"画图片",@"圆形进度条和饼状图",@"柱状图📊",@"涂鸦"]];
+    _titles= @[@[@"画线",@"画矩形",@"画圆形",@"画文字",@"画图片",@"圆形进度条和饼状图",@"柱状图📊",@"涂鸦"],
+               @[@"图片水印"]];
 }
 - (UITableView *)myTableView {
     if (!_myTableView) {
@@ -66,10 +68,16 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    HHDrawViewController *vc = [[HHDrawViewController alloc] init];
-    vc.title = _titles[indexPath.section][indexPath.row];
-    vc.index = indexPath.row;
-    [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.section == 0) {
+        HHDrawViewController *vc = [[HHDrawViewController alloc] init];
+        vc.title = _titles[indexPath.section][indexPath.row];
+        vc.index = indexPath.row;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else {
+        HHGraphicsViewController *vc = [[HHGraphicsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
     
 }
 
