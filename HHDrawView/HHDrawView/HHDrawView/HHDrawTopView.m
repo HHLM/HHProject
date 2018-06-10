@@ -15,6 +15,16 @@
 
 @implementation HHDrawTopView
 
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    
+    if (CGRectContainsPoint(self.imgView.frame, point)) {
+        NSLog(@"点在imageView上");
+        return self.imgView;
+    }
+    return self.imgView;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
