@@ -7,6 +7,7 @@
 //
 
 #import "HHGraphicsViewController.h"
+#import "HHDrawBoardViewController.h"
 #import "AppDelegate.h"
 @interface HHGraphicsViewController ()
 @property (nonatomic, strong) UIImageView *imgView;
@@ -23,6 +24,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if (_index == 0) {
          [self drawImageContext];
+    }else if(_index == 6) {
+        [self drawBoard];
     }
 }
 - (UIView *)currentView {
@@ -52,7 +55,7 @@
         void(*func)(id,SEL) = (void *)imp;
         func(self,selector);
     }
-//    [self updateImageView];
+    [self updateImageView];
 }
 - (void)imageContext0 {
     _imgView.contentMode = UIViewContentModeCenter;
@@ -68,34 +71,54 @@
 
 - (void)imageContext3 {
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UINavigationController *nav = (UINavigationController *)app.window.rootViewController;
     [self screenShot:app.window];
 }
 - (void)imageContext4 {
-    _image = [UIImage imageNamed:@"111.jpg"];
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panCustomRect:)];
-    [self.view addGestureRecognizer:pan];
+    [self customScreenShot];
 }
 - (void)imageContext5 {
+    [self claerPicture];
+}
+- (void)imageContext6 {
+    [self drawBoard];
+}
+
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     [self.view addSubview:self.imgView];
+    [self respondsSelectorIndex:_index];
+}
+/** 更新 */
+- (void)updateImageView {
+    self.imgView.image = _image;
+}
+
+#pragma mark -- 画板
+- (void)drawBoard {
+    HHDrawBoardViewController *vc = [[HHDrawBoardViewController alloc] init];
+    [self.navigationController presentViewController:vc animated:YES completion:nil];
+}
+
+#pragma mark -- 擦除图片
+
+- (void)claerPicture {
     [self.view addSubview:self.topImgView];
-    
     self.topImgView.image = [UIImage imageNamed:@"222.jpeg"];
     _image = [UIImage imageNamed:@"111.jpg"];
     self.imgView.image = _image;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.view addGestureRecognizer:pan];
 }
-
 - (void)pan:(UIPanGestureRecognizer *)pan {
     CGPoint starP = [pan locationInView:self.view];
     CGFloat maxW = 30.0;
     CGRect rect = CGRectMake(starP.x-maxW/2, starP.y-maxW/2, maxW, maxW);
     
+    /** 开启位图图形上下文 */
     UIGraphicsBeginImageContextWithOptions(self.topImgView.frame.size, NO, 0);
-    
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:rect];
-    
+    /** 获取图形上下文 */
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     //渲染到图形上下文
     [self.topImgView.layer renderInContext:ctx];
@@ -107,6 +130,14 @@
     
 }
 
+
+#pragma mark --  手动截图
+- (void)customScreenShot {
+    
+    _image = [UIImage imageNamed:@"111.jpg"];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panCustomRect:)];
+    [self.view addGestureRecognizer:pan];
+}
 - (void)panCustomRect:(UIPanGestureRecognizer *)pan {
     
     CGPoint endPoint;
@@ -121,7 +152,7 @@
         [self.currentView setFrame:CGRectMake(_starPoint.x, _starPoint.y, w, h)];
     }else {
         UIGraphicsBeginImageContextWithOptions(self.imgView.frame.size, false, 0);
-       
+        
         //裁剪区域 选择区域的大小
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:self.currentView.frame];
         [path addClip];
@@ -142,19 +173,6 @@
     }
     
 }
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self.view addSubview:self.imgView];
-    [self respondsSelectorIndex:_index];
-}
-/** 更新 */
-- (void)updateImageView {
-    self.imgView.image = _image;
-}
-
-#pragma mark -- 手动截图
 
 #pragma mark -- 屏幕截屏
 /** 屏幕截屏 */
@@ -178,7 +196,6 @@
     _imgView.frame = CGRectMake(0,100, self.view.width, self.view.width);
     UIImage *image = [UIImage imageNamed:@"111.jpg"];
     _image = [UIImage clipCirqueImage:image cirqueColor:[UIColor purpleColor] border:10];
-    
 }
 
 #pragma mark -- 图片裁剪

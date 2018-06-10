@@ -31,6 +31,10 @@
 		0442163920CB860B000847A0 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163720CB860A000847A0 /* 111.jpg */; };
 		0442163A20CB860B000847A0 /* 222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163820CB860A000847A0 /* 222.jpeg */; };
 		049D2C8B20CBB13400D9E82B /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */; };
+		049D2C8E20CCD9ED00D9E82B /* HHDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */; };
+		049D2C9220CCDA6200D9E82B /* HHDrawBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9020CCDA6200D9E82B /* HHDrawBoardViewController.m */; };
+		049D2C9320CCDA6200D9E82B /* HHDrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */; };
+		049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9520CCE81900D9E82B /* HHBezierPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +83,13 @@
 		0442163820CB860A000847A0 /* 222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpeg; sourceTree = "<group>"; };
 		049D2C8920CBB13400D9E82B /* UIImage+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
 		049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
+		049D2C8C20CCD9ED00D9E82B /* HHDrawBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDrawBoardView.h; sourceTree = "<group>"; };
+		049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDrawBoardView.m; sourceTree = "<group>"; };
+		049D2C8F20CCDA6200D9E82B /* HHDrawBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDrawBoardViewController.h; sourceTree = "<group>"; };
+		049D2C9020CCDA6200D9E82B /* HHDrawBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDrawBoardViewController.m; sourceTree = "<group>"; };
+		049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHDrawBoardViewController.xib; sourceTree = "<group>"; };
+		049D2C9420CCE81900D9E82B /* HHBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBezierPath.h; sourceTree = "<group>"; };
+		049D2C9520CCE81900D9E82B /* HHBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBezierPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +176,10 @@
 				0431FB1520CAA9BE00E14141 /* HHBarChartView.m */,
 				0431FB1720CAEBDF00E14141 /* HHScrawlView.h */,
 				0431FB1820CAEBDF00E14141 /* HHScrawlView.m */,
+				049D2C8C20CCD9ED00D9E82B /* HHDrawBoardView.h */,
+				049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */,
+				049D2C9420CCE81900D9E82B /* HHBezierPath.h */,
+				049D2C9520CCE81900D9E82B /* HHBezierPath.m */,
 				0431FB1320CAA87F00E14141 /* Category */,
 			);
 			path = HHDrawView;
@@ -187,6 +202,9 @@
 			children = (
 				0442163420CB83C3000847A0 /* HHGraphicsViewController.h */,
 				0442163520CB83C3000847A0 /* HHGraphicsViewController.m */,
+				049D2C8F20CCDA6200D9E82B /* HHDrawBoardViewController.h */,
+				049D2C9020CCDA6200D9E82B /* HHDrawBoardViewController.m */,
+				049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */,
 			);
 			path = HHContextView;
 			sourceTree = "<group>";
@@ -254,6 +272,7 @@
 				0442163920CB860B000847A0 /* 111.jpg in Resources */,
 				0442162920CA1F1A000847A0 /* LaunchScreen.storyboard in Resources */,
 				044215F920CA1BA7000847A0 /* Main.storyboard in Resources */,
+				049D2C9320CCDA6200D9E82B /* HHDrawBoardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +288,8 @@
 				0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
 				0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */,
+				049D2C9220CCDA6200D9E82B /* HHDrawBoardViewController.m in Sources */,
+				049D2C8E20CCD9ED00D9E82B /* HHDrawBoardView.m in Sources */,
 				0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */,
 				0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
@@ -281,6 +302,7 @@
 				0442161920CA1BD0000847A0 /* HHDrawLineView.m in Sources */,
 				0442161C20CA1BD0000847A0 /* HHDrawRectView.m in Sources */,
 				0442162B20CA1F1A000847A0 /* main.m in Sources */,
+				049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */,
 				0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */,
 				0442162F20CA5984000847A0 /* HHProgressView.m in Sources */,
 			);
