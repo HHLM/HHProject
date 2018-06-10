@@ -31,6 +31,7 @@
 - (UITableView *)myTableView {
     if (!_myTableView) {
         _myTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _myTableView.height = self.view.height - 64;
         _myTableView.delegate = self;
         _myTableView.dataSource = self;
     }

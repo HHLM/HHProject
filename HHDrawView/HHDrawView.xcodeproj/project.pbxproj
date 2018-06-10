@@ -35,6 +35,7 @@
 		049D2C9220CCDA6200D9E82B /* HHDrawBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9020CCDA6200D9E82B /* HHDrawBoardViewController.m */; };
 		049D2C9320CCDA6200D9E82B /* HHDrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */; };
 		049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9520CCE81900D9E82B /* HHBezierPath.m */; };
+		049D2C9920CDE03600D9E82B /* HHDrawTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9820CDE03600D9E82B /* HHDrawTopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,8 @@
 		049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHDrawBoardViewController.xib; sourceTree = "<group>"; };
 		049D2C9420CCE81900D9E82B /* HHBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBezierPath.h; sourceTree = "<group>"; };
 		049D2C9520CCE81900D9E82B /* HHBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBezierPath.m; sourceTree = "<group>"; };
+		049D2C9720CDE03600D9E82B /* HHDrawTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDrawTopView.h; sourceTree = "<group>"; };
+		049D2C9820CDE03600D9E82B /* HHDrawTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDrawTopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 				049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */,
 				049D2C9420CCE81900D9E82B /* HHBezierPath.h */,
 				049D2C9520CCE81900D9E82B /* HHBezierPath.m */,
+				049D2C9720CDE03600D9E82B /* HHDrawTopView.h */,
+				049D2C9820CDE03600D9E82B /* HHDrawTopView.m */,
 				0431FB1320CAA87F00E14141 /* Category */,
 			);
 			path = HHDrawView;
@@ -295,6 +300,7 @@
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
 				049D2C8B20CBB13400D9E82B /* UIImage+Ext.m in Sources */,
+				049D2C9920CDE03600D9E82B /* HHDrawTopView.m in Sources */,
 				0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */,
 				044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */,
 				0442161A20CA1BD0000847A0 /* HHBaseView.m in Sources */,

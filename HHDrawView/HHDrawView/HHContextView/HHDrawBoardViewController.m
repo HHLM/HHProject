@@ -8,6 +8,7 @@
 
 #import "HHDrawBoardViewController.h"
 #import "HHDrawBoardView.h"
+#import "HHDrawTopView.h"
 @interface HHDrawBoardViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet HHDrawBoardView *drawView;
 
@@ -40,7 +41,14 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     NSLog(@"%@",info);
     UIImage *image  = info[UIImagePickerControllerOriginalImage];
-    self.drawView.image = image;
+    
+    HHDrawTopView *topView = [[HHDrawTopView alloc] initWithFrame:self.drawView.bounds];
+    [self.drawView addSubview:topView];
+    [topView setBlock:^(UIImage *image) {
+        self.drawView.image = image;
+    }];
+    
+    topView.image = image;
     [self imagePickerControllerDidCancel:picker];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
