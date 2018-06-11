@@ -36,6 +36,8 @@
 		049D2C9320CCDA6200D9E82B /* HHDrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */; };
 		049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9520CCE81900D9E82B /* HHBezierPath.m */; };
 		049D2C9920CDE03600D9E82B /* HHDrawTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9820CDE03600D9E82B /* HHDrawTopView.m */; };
+		049E7E7320CEC385007688BF /* HHAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E7E7220CEC385007688BF /* HHAnimationView.m */; };
+		049E7E7820CEC985007688BF /* HHAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E7E7720CEC985007688BF /* HHAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,10 @@
 		049D2C9520CCE81900D9E82B /* HHBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBezierPath.m; sourceTree = "<group>"; };
 		049D2C9720CDE03600D9E82B /* HHDrawTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDrawTopView.h; sourceTree = "<group>"; };
 		049D2C9820CDE03600D9E82B /* HHDrawTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDrawTopView.m; sourceTree = "<group>"; };
+		049E7E7120CEC385007688BF /* HHAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAnimationView.h; sourceTree = "<group>"; };
+		049E7E7220CEC385007688BF /* HHAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimationView.m; sourceTree = "<group>"; };
+		049E7E7620CEC985007688BF /* HHAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAnimationViewController.h; sourceTree = "<group>"; };
+		049E7E7720CEC985007688BF /* HHAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 		044215F020CA1BA7000847A0 /* HHDrawView */ = {
 			isa = PBXGroup;
 			children = (
+				049E7E7020CEC36F007688BF /* HHAnimationView */,
 				04E94E6020CE0711001AC379 /* HHDrawBoardView */,
 				0442163320CB8344000847A0 /* HHContextVC */,
 				0442160A20CA1BD0000847A0 /* HHDrawView */,
@@ -207,6 +214,17 @@
 				049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */,
 			);
 			path = HHContextVC;
+			sourceTree = "<group>";
+		};
+		049E7E7020CEC36F007688BF /* HHAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				049E7E7120CEC385007688BF /* HHAnimationView.h */,
+				049E7E7220CEC385007688BF /* HHAnimationView.m */,
+				049E7E7620CEC985007688BF /* HHAnimationViewController.h */,
+				049E7E7720CEC985007688BF /* HHAnimationViewController.m */,
+			);
+			path = HHAnimationView;
 			sourceTree = "<group>";
 		};
 		04E94E6020CE0711001AC379 /* HHDrawBoardView */ = {
@@ -319,6 +337,8 @@
 				049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */,
 				0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */,
 				0442162F20CA5984000847A0 /* HHProgressView.m in Sources */,
+				049E7E7320CEC385007688BF /* HHAnimationView.m in Sources */,
+				049E7E7820CEC985007688BF /* HHAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
