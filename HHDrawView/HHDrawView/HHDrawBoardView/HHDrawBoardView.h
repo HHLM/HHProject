@@ -9,14 +9,17 @@
 #import "HHBaseView.h"
 
 @interface HHDrawBoardView : HHBaseView
+
 /** 线条宽度 */
 @property (nonatomic, assign) CGFloat lineWidth;
+
 /** 线条颜色 */
 @property (nonatomic, strong) UIColor *lineColor;
+
 /** 设置的图片 */
 @property (nonatomic, strong) UIImage *image;
 
-/** 清除 */
+/** 清除画板 */
 - (void)clearPath;
 
 /** 撤销上一个 */
@@ -24,4 +27,7 @@
 
 /** 保存图片 */
 - (void)savePhoto;
+
+/** 橡皮擦 */
+- (void)erasurePath;
 @end

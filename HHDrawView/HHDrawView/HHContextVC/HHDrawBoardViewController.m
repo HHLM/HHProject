@@ -42,13 +42,17 @@
     NSLog(@"%@",info);
     UIImage *image  = info[UIImagePickerControllerOriginalImage];
     
+#if 0
     HHDrawTopView *topView = [[HHDrawTopView alloc] initWithFrame:self.drawView.bounds];
     [self.drawView addSubview:topView];
     [topView setBlock:^(UIImage *image) {
         self.drawView.image = image;
     }];
-    
     topView.image = image;
+#else
+    self.drawView.image = image;
+#endif
+    
     [self imagePickerControllerDidCancel:picker];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
