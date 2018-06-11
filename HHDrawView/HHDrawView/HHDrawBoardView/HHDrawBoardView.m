@@ -8,7 +8,9 @@
 
 #import "HHDrawBoardView.h"
 #import "HHBezierPath.h"
+#import "HHDrawTopView.h"
 @interface HHDrawBoardView()
+@property (nonatomic, strong) HHDrawTopView  *topView;
 @property (nonatomic, strong) NSMutableArray *paths;
 @property (nonatomic, strong) HHBezierPath *path;
 @end
@@ -20,6 +22,12 @@
     if (self) {
         [self setUp];
     }return self;
+}
+
+- (HHDrawTopView *)topView {
+    if (!_topView) {
+        _topView = [[HHDrawTopView alloc] initWithFrame:self.bounds];
+    }return _topView;
 }
 
 - (void)awakeFromNib {
@@ -47,8 +55,16 @@
 /** 设置图片 */
 - (void)setImage:(UIImage *)image {
    
-    [self.paths addObject:image];
-    [self setNeedsDisplay];
+    [self addSubview:self.topView];
+    self.topView.image = image;
+    __weak HHDrawBoardView *weakSelf = self;
+    
+    [self.topView setBlock:^(UIImage *image) {
+        [weakSelf.paths addObject:image];
+        [weakSelf setNeedsDisplay];
+    }];
+    
+    
 }
 /** 设置线条颜色 */
 - (void)setLineColor:(UIColor *)lineColor {
@@ -58,6 +74,11 @@
 - (void)setLineWidth:(CGFloat)lineWidth {
     _lineWidth = lineWidth;
     [self setNeedsDisplay];
+}
+
+/** 橡皮擦 */
+- (void)erasurePath {
+    _lineColor = self.backgroundColor;
 }
 
 /** 保存图片 */

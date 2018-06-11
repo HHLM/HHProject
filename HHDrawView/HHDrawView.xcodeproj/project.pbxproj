@@ -143,16 +143,9 @@
 		044215F020CA1BA7000847A0 /* HHDrawView */ = {
 			isa = PBXGroup;
 			children = (
-				0442163320CB8344000847A0 /* HHContextView */,
+				04E94E6020CE0711001AC379 /* HHDrawBoardView */,
+				0442163320CB8344000847A0 /* HHContextVC */,
 				0442160A20CA1BD0000847A0 /* HHDrawView */,
-				044215F120CA1BA7000847A0 /* AppDelegate.h */,
-				044215F220CA1BA7000847A0 /* AppDelegate.m */,
-				044215F420CA1BA7000847A0 /* ViewController.h */,
-				044215F520CA1BA7000847A0 /* ViewController.m */,
-				0442160820CA1BC9000847A0 /* HHDrawViewController.h */,
-				0442160720CA1BC9000847A0 /* HHDrawViewController.m */,
-				0442161E20CA1C3F000847A0 /* HHBaseViewController.h */,
-				0442161D20CA1C3F000847A0 /* HHBaseViewController.m */,
 				0442162C20CA1F54000847A0 /* Others */,
 			);
 			path = HHDrawView;
@@ -179,12 +172,6 @@
 				0431FB1520CAA9BE00E14141 /* HHBarChartView.m */,
 				0431FB1720CAEBDF00E14141 /* HHScrawlView.h */,
 				0431FB1820CAEBDF00E14141 /* HHScrawlView.m */,
-				049D2C8C20CCD9ED00D9E82B /* HHDrawBoardView.h */,
-				049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */,
-				049D2C9420CCE81900D9E82B /* HHBezierPath.h */,
-				049D2C9520CCE81900D9E82B /* HHBezierPath.m */,
-				049D2C9720CDE03600D9E82B /* HHDrawTopView.h */,
-				049D2C9820CDE03600D9E82B /* HHDrawTopView.m */,
 				0431FB1320CAA87F00E14141 /* Category */,
 			);
 			path = HHDrawView;
@@ -193,6 +180,8 @@
 		0442162C20CA1F54000847A0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				044215F120CA1BA7000847A0 /* AppDelegate.h */,
+				044215F220CA1BA7000847A0 /* AppDelegate.m */,
 				044215FF20CA1BA7000847A0 /* Info.plist */,
 				0442162320CA1F1A000847A0 /* LaunchScreen.storyboard */,
 				0442162220CA1F1A000847A0 /* Assets.xcassets */,
@@ -202,16 +191,35 @@
 			name = Others;
 			sourceTree = "<group>";
 		};
-		0442163320CB8344000847A0 /* HHContextView */ = {
+		0442163320CB8344000847A0 /* HHContextVC */ = {
 			isa = PBXGroup;
 			children = (
+				044215F420CA1BA7000847A0 /* ViewController.h */,
+				044215F520CA1BA7000847A0 /* ViewController.m */,
+				0442161E20CA1C3F000847A0 /* HHBaseViewController.h */,
+				0442161D20CA1C3F000847A0 /* HHBaseViewController.m */,
+				0442160820CA1BC9000847A0 /* HHDrawViewController.h */,
+				0442160720CA1BC9000847A0 /* HHDrawViewController.m */,
 				0442163420CB83C3000847A0 /* HHGraphicsViewController.h */,
 				0442163520CB83C3000847A0 /* HHGraphicsViewController.m */,
 				049D2C8F20CCDA6200D9E82B /* HHDrawBoardViewController.h */,
 				049D2C9020CCDA6200D9E82B /* HHDrawBoardViewController.m */,
 				049D2C9120CCDA6200D9E82B /* HHDrawBoardViewController.xib */,
 			);
-			path = HHContextView;
+			path = HHContextVC;
+			sourceTree = "<group>";
+		};
+		04E94E6020CE0711001AC379 /* HHDrawBoardView */ = {
+			isa = PBXGroup;
+			children = (
+				049D2C8C20CCD9ED00D9E82B /* HHDrawBoardView.h */,
+				049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */,
+				049D2C9420CCE81900D9E82B /* HHBezierPath.h */,
+				049D2C9520CCE81900D9E82B /* HHBezierPath.m */,
+				049D2C9720CDE03600D9E82B /* HHDrawTopView.h */,
+				049D2C9820CDE03600D9E82B /* HHDrawTopView.m */,
+			);
+			path = HHDrawBoardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
