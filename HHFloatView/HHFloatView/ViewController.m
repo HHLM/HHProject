@@ -99,6 +99,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"alipay://"]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"alipay://"] options:nil completionHandler:^(BOOL success) {
+            
+        }];
+    }
     EOCNextViewController *nextViewCtrl = [EOCNextViewController new];
     [self.navigationController pushViewController:nextViewCtrl animated:YES];
     
