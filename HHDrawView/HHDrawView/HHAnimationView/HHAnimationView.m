@@ -77,3 +77,76 @@
 }
 
 @end
+
+@implementation HHAnimationView1
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        self.backgroundColor = [UIColor redColor];
+        
+        /** 创建一个复制层layer 这样就可以复制多个相同的layer */
+        CAReplicatorLayer *rLayer = [CAReplicatorLayer layer];
+        
+        rLayer.frame = self.bounds;
+        
+        [self.layer addSublayer:rLayer];
+        
+        /** 创建一个layer */
+        CALayer *layer = [CALayer layer];
+        
+        CGFloat w = 30;
+        
+        CGFloat H = 200;
+        
+        /** 设置当前位置在 也就是相当于中心位置 */
+        layer.position = CGPointMake(w, CGRectGetHeight(self.frame));
+        
+        layer.backgroundColor = [UIColor greenColor].CGColor;
+        
+        /** 锚点 默认(0.5,0.5)  就相当于是中心点*/
+        layer.anchorPoint = CGPointMake(0.5, 1);
+        
+        layer.bounds = CGRectMake(0, 0, w, H);
+        
+        /** 创建一个基本动画 */
+        CABasicAnimation *anim = [CABasicAnimation animation];
+        
+        /** 这是用的kvo的思想 这个动画代表缩放 */
+        anim.keyPath = @"transform.scale.y";
+        
+        anim.fromValue = @1;
+        
+        anim.toValue = @0.3;
+        
+        anim.autoreverses = YES;
+        
+        /** 动画重复次数  无穷*/
+        anim.repeatCount = MAXFLOAT;
+        
+        /** 动画持续时间  */
+        CGFloat duration = 0.2f;
+        
+        anim.duration = duration;
+        
+        /** 把动画添加到layer上 */
+        [layer addAnimation:anim forKey:nil];
+        
+        /** 把layer添加到复制层上 */
+        [rLayer addSublayer:layer];
+        
+        /** 要复制多少个layer */
+        NSInteger count = 5;
+        
+        rLayer.instanceCount = count;
+        
+        rLayer.instanceTransform = CATransform3DMakeTranslation(2*w, 0, 0);;
+        
+        rLayer.instanceDelay = 0.1;
+    }
+    return self;
+}
+
+@end

@@ -11,3 +11,7 @@
 @interface HHAnimationView : HHBaseView
 
 @end
+
+@interface HHAnimationView1 : HHBaseView
+
+@end
