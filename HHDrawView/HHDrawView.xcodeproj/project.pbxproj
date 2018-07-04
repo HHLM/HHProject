@@ -30,6 +30,7 @@
 		0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442163520CB83C3000847A0 /* HHGraphicsViewController.m */; };
 		0442163920CB860B000847A0 /* 111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163720CB860A000847A0 /* 111.jpg */; };
 		0442163A20CB860B000847A0 /* 222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0442163820CB860A000847A0 /* 222.jpeg */; };
+		0460ED8720D10AF300081CAC /* UIControl+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460ED8520D10AF200081CAC /* UIControl+Ext.m */; };
 		049D2C8B20CBB13400D9E82B /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */; };
 		049D2C8E20CCD9ED00D9E82B /* HHDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C8D20CCD9ED00D9E82B /* HHDrawBoardView.m */; };
 		049D2C9220CCDA6200D9E82B /* HHDrawBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9020CCDA6200D9E82B /* HHDrawBoardViewController.m */; };
@@ -84,6 +85,8 @@
 		0442163520CB83C3000847A0 /* HHGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHGraphicsViewController.m; sourceTree = "<group>"; };
 		0442163720CB860A000847A0 /* 111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.jpg; sourceTree = "<group>"; };
 		0442163820CB860A000847A0 /* 222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpeg; sourceTree = "<group>"; };
+		0460ED8520D10AF200081CAC /* UIControl+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Ext.m"; sourceTree = "<group>"; };
+		0460ED8620D10AF200081CAC /* UIControl+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Ext.h"; sourceTree = "<group>"; };
 		049D2C8920CBB13400D9E82B /* UIImage+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
 		049D2C8A20CBB13400D9E82B /* UIImage+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
 		049D2C8C20CCD9ED00D9E82B /* HHDrawBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDrawBoardView.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 		0431FB1320CAA87F00E14141 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0460ED8620D10AF200081CAC /* UIControl+Ext.h */,
+				0460ED8520D10AF200081CAC /* UIControl+Ext.m */,
 				0431FB1A20CAF56C00E14141 /* UIButton+Ext.h */,
 				0431FB1B20CAF56C00E14141 /* UIButton+Ext.m */,
 				0442163020CA6AC2000847A0 /* UIColor+Ext.h */,
@@ -337,6 +342,7 @@
 				049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */,
 				0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */,
 				0442162F20CA5984000847A0 /* HHProgressView.m in Sources */,
+				0460ED8720D10AF300081CAC /* UIControl+Ext.m in Sources */,
 				049E7E7320CEC385007688BF /* HHAnimationView.m in Sources */,
 				049E7E7820CEC985007688BF /* HHAnimationViewController.m in Sources */,
 			);
