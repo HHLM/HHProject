@@ -10,6 +10,7 @@
 #import "HHAnimationView.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "HHClockView.h"
 @interface HHAnimationViewController ()
 
 @end
@@ -52,6 +53,12 @@
     
     HHAnimationView1 *animationView1 = [[HHAnimationView1 alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.frame)/2 - 150, 300, 300, 250)];
     [self.view addSubview:animationView1];
+}
+- (void)animation1 {
+    self.title = @"时钟转动";
+    HHClockView *clock = [[HHClockView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    clock.center = self.view.center;
+    [self.view addSubview:clock];
 }
 
 @end

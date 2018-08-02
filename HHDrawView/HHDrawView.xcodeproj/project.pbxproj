@@ -39,6 +39,8 @@
 		049D2C9920CDE03600D9E82B /* HHDrawTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D2C9820CDE03600D9E82B /* HHDrawTopView.m */; };
 		049E7E7320CEC385007688BF /* HHAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E7E7220CEC385007688BF /* HHAnimationView.m */; };
 		049E7E7820CEC985007688BF /* HHAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E7E7720CEC985007688BF /* HHAnimationViewController.m */; };
+		04B1082A21132B290055221C /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B1082721132B280055221C /* clock@2x.png */; };
+		04B1082B21132B290055221C /* HHClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1082821132B290055221C /* HHClockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,9 @@
 		049E7E7220CEC385007688BF /* HHAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimationView.m; sourceTree = "<group>"; };
 		049E7E7620CEC985007688BF /* HHAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAnimationViewController.h; sourceTree = "<group>"; };
 		049E7E7720CEC985007688BF /* HHAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimationViewController.m; sourceTree = "<group>"; };
+		04B1082721132B280055221C /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		04B1082821132B290055221C /* HHClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHClockView.m; sourceTree = "<group>"; };
+		04B1082921132B290055221C /* HHClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHClockView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +229,9 @@
 		049E7E7020CEC36F007688BF /* HHAnimationView */ = {
 			isa = PBXGroup;
 			children = (
+				04B1082721132B280055221C /* clock@2x.png */,
+				04B1082921132B290055221C /* HHClockView.h */,
+				04B1082821132B290055221C /* HHClockView.m */,
 				049E7E7120CEC385007688BF /* HHAnimationView.h */,
 				049E7E7220CEC385007688BF /* HHAnimationView.m */,
 				049E7E7620CEC985007688BF /* HHAnimationViewController.h */,
@@ -307,6 +315,7 @@
 				0442163A20CB860B000847A0 /* 222.jpeg in Resources */,
 				0442163920CB860B000847A0 /* 111.jpg in Resources */,
 				0442162920CA1F1A000847A0 /* LaunchScreen.storyboard in Resources */,
+				04B1082A21132B290055221C /* clock@2x.png in Resources */,
 				044215F920CA1BA7000847A0 /* Main.storyboard in Resources */,
 				049D2C9320CCDA6200D9E82B /* HHDrawBoardViewController.xib in Resources */,
 			);
@@ -324,6 +333,7 @@
 				0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
 				0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */,
+				04B1082B21132B290055221C /* HHClockView.m in Sources */,
 				049D2C9220CCDA6200D9E82B /* HHDrawBoardViewController.m in Sources */,
 				049D2C8E20CCD9ED00D9E82B /* HHDrawBoardView.m in Sources */,
 				0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */,
