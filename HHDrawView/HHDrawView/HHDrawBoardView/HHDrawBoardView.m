@@ -81,7 +81,7 @@
     _lineColor = self.backgroundColor;
 }
 
-/** 保存图片 */
+/** 截图保存图片 */
 - (void)savePhoto {
     /** 1、开始位图图形上下文 */
     UIGraphicsBeginImageContextWithOptions(self.frame.size, false, 0);
@@ -134,6 +134,7 @@
 
 - (void)drawRect:(CGRect)rect {
     for (id objc in self.paths) {
+        /** 区分是图片还是path */
         if ([objc isKindOfClass:[UIImage class]]) {
             [(UIImage *)objc drawInRect:self.bounds];
         }else {

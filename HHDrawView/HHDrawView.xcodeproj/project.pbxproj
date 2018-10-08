@@ -73,7 +73,7 @@
 		0442161320CA1BD0000847A0 /* HHDrawRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDrawRoundView.h; sourceTree = "<group>"; };
 		0442161420CA1BD0000847A0 /* HHDrawImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawImageView.m; sourceTree = "<group>"; };
 		0442161520CA1BD0000847A0 /* HHDrawLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDrawLineView.h; sourceTree = "<group>"; };
-		0442161620CA1BD0000847A0 /* HHDrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawRectView.m; sourceTree = "<group>"; };
+		0442161620CA1BD0000847A0 /* HHDrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawRectView.m; sourceTree = "<group>"; usesTabs = 0; };
 		0442161D20CA1C3F000847A0 /* HHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseViewController.m; sourceTree = "<group>"; };
 		0442161E20CA1C3F000847A0 /* HHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseViewController.h; sourceTree = "<group>"; };
 		0442162220CA1F1A000847A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };

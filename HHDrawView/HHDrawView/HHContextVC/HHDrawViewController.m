@@ -27,16 +27,17 @@
 }
 
 - (void)setIndex:(NSInteger)index {
-    NSString *methodStr = [NSString stringWithFormat:@"addDrawView%ld",index];
+    NSString *methodStr = [NSString stringWithFormat:@"addDrawView%ld",(long)index];
     
 #if 0
-    
+    /** runtime 消息转发 */
     char *methodName = (char *)[methodStr cStringUsingEncoding:NSUTF8StringEncoding];
     
     objc_msgSend(self,sel_registerName(methodName));
 
 #else
 
+    /** 通过方法名获取方法 SEL */
     SEL sel = NSSelectorFromString(methodStr);
     
      /** 方法一 */

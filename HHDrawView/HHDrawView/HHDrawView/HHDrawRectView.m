@@ -59,23 +59,23 @@
     
     [[UIColor greenColor] set];
     
-    [path stroke];
+    [path fill];
 }
 
 /** 添加矩形 */
 - (void)addRect1 {
-    UIBezierPath *paht = [UIBezierPath bezierPathWithRect:CGRectMake(20, 20, 150, 100)];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(20, 20, 150, 100)];
    
     /** 填充颜色 */
     [[UIColor redColor] set];
     /** 填充  默认会闭合曲线 */
-    [paht fill];
+    [path fill];
 
     [[UIColor purpleColor] set];
     /** 线宽 */
-    paht.lineWidth = 3;
+    path.lineWidth = 3;
     /** 线的颜色 */
-    [paht stroke];
+    [path stroke];
 }
 
 @end

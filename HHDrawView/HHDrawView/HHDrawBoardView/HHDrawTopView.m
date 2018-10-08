@@ -57,17 +57,18 @@
 }
 
 - (void)addGestureRecognizer {
+    /** 滑动手势 */
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.imgView addGestureRecognizer:pan];
-    
+    /** 旋转手势 */
     UIRotationGestureRecognizer *rotation = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotation:)];
     rotation.delegate = self;
     [self.imgView addGestureRecognizer:rotation];
-    
+    /** 捏合手势 */
     UIPinchGestureRecognizer  *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
     pinch.delegate = self;
     [self.imgView addGestureRecognizer:pinch];
-    
+    /** 长按手势 */
     UILongPressGestureRecognizer  *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
     [self.imgView addGestureRecognizer:longPress];
 }
@@ -124,7 +125,7 @@
     /** 开启图形上下文 */
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0);
     
-    /** 回去图形上下文 */
+    /** 获取图形上下文 */
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     /** layer 渲染到图形上下文*/

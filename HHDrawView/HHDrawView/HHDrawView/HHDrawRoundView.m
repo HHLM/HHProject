@@ -10,7 +10,13 @@
 
 @implementation HHDrawRoundView
 
-
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addRound6];
+        
+    }return self;
+}
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
@@ -19,6 +25,31 @@
     [self addRound3];
     [self addRound4];
     [self addRound5];
+    
+
+}
+
+- (void)addRound6 {
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(100, 100, 200, 200) cornerRadius:100];
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.path = path.CGPath;
+    layer.lineWidth = 5;
+    layer.fillColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1].CGColor;
+    layer.strokeColor = [UIColor yellowColor].CGColor;
+    [self.layer addSublayer:layer];
+    
+    /** 添加动画 */
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(400, 500)];
+    /** 运动时间 */
+    animation.duration = 1;
+    /** 重复次数 */
+    animation.repeatDuration = 1;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    
+    [layer addAnimation:animation forKey:nil];
+    
 }
 /** 画椭圆 */
 - (void)addRound5 {

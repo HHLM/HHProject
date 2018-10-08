@@ -51,9 +51,9 @@
     path.lineWidth = 1;
     
     //曲线间隙和长度都是5
-    CGFloat length[] = {5 ,5};
+    CGFloat length[] = {5 ,2,5};
     
-    [path setLineDash:length count:2 phase:0];
+    [path setLineDash:length count:3 phase:0];
     
     [path moveToPoint:CGPointMake(0, 0)];
     
