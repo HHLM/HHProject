@@ -10,6 +10,7 @@
 #import "HHDrawViewController.h"
 #import "HHGraphicsViewController.h"
 #import "HHAnimationViewController.h"
+#import "HHViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) NSArray *titles;
@@ -28,7 +29,7 @@
     self.navigationController.navigationBar.translucent = NO;
     _titles= @[@[@"画线",@"画矩形",@"画圆形",@"画文字",@"画图片",@"圆形进度条和饼状图",@"柱状图📊",@"涂鸦"],
                @[@"图片水印",@"圆形图片剪切",@"带圆环的圆形图片剪切",@"屏幕截图",@"手动选择区域截图",@"图片擦除",@"画板"],
-               @[@"动画效果",@"时钟转动"]];
+               @[@"动画效果",@"时钟转动"],@[@"旧版贝塞尔曲线"]];
 }
 - (UITableView *)myTableView {
     if (!_myTableView) {
@@ -80,9 +81,12 @@
         HHGraphicsViewController *vc = [[HHGraphicsViewController alloc] init];
         vc.index = indexPath.row;
         [self.navigationController pushViewController:vc animated:YES];
-    }else {
+    }else if(indexPath.section == 2) {
         HHAnimationViewController *vc = [[HHAnimationViewController alloc] init];
         vc.index = indexPath.row;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else {
+        HHViewController *vc = [HHViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
     

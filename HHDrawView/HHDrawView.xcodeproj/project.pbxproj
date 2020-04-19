@@ -41,6 +41,16 @@
 		049E7E7820CEC985007688BF /* HHAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E7E7720CEC985007688BF /* HHAnimationViewController.m */; };
 		04B1082A21132B290055221C /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B1082721132B280055221C /* clock@2x.png */; };
 		04B1082B21132B290055221C /* HHClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1082821132B290055221C /* HHClockView.m */; };
+		9419F08D244C96D600083DDF /* HHDrawAllView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F07F244C96D500083DDF /* HHDrawAllView.m */; };
+		9419F08E244C96D600083DDF /* HHClipRoundViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F080244C96D500083DDF /* HHClipRoundViewVC.m */; };
+		9419F08F244C96D600083DDF /* HHDrawRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F081244C96D500083DDF /* HHDrawRectVC.m */; };
+		9419F090244C96D600083DDF /* HHClipRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F082244C96D500083DDF /* HHClipRoundView.m */; };
+		9419F091244C96D600083DDF /* HHLDrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F083244C96D500083DDF /* HHLDrawRectView.m */; };
+		9419F092244C96D600083DDF /* HHPaintVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F085244C96D600083DDF /* HHPaintVC.m */; };
+		9419F093244C96D600083DDF /* HHPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F088244C96D600083DDF /* HHPaintView.m */; };
+		9419F094244C96D600083DDF /* HHBezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F089244C96D600083DDF /* HHBezierPathVC.m */; };
+		9419F095244C96D600083DDF /* HHBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F08B244C96D600083DDF /* HHBezierPathView.m */; };
+		9419F098244C979600083DDF /* HHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9419F097244C979500083DDF /* HHViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +117,26 @@
 		04B1082721132B280055221C /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		04B1082821132B290055221C /* HHClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHClockView.m; sourceTree = "<group>"; };
 		04B1082921132B290055221C /* HHClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHClockView.h; sourceTree = "<group>"; };
+		9419F07A244C96D500083DDF /* HHDrawRectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDrawRectVC.h; sourceTree = "<group>"; };
+		9419F07B244C96D500083DDF /* HHClipRoundViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHClipRoundViewVC.h; sourceTree = "<group>"; };
+		9419F07C244C96D500083DDF /* HHDrawAllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDrawAllView.h; sourceTree = "<group>"; };
+		9419F07D244C96D500083DDF /* HHLDrawRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLDrawRectView.h; sourceTree = "<group>"; };
+		9419F07E244C96D500083DDF /* HHClipRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHClipRoundView.h; sourceTree = "<group>"; };
+		9419F07F244C96D500083DDF /* HHDrawAllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawAllView.m; sourceTree = "<group>"; };
+		9419F080244C96D500083DDF /* HHClipRoundViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHClipRoundViewVC.m; sourceTree = "<group>"; };
+		9419F081244C96D500083DDF /* HHDrawRectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDrawRectVC.m; sourceTree = "<group>"; };
+		9419F082244C96D500083DDF /* HHClipRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHClipRoundView.m; sourceTree = "<group>"; };
+		9419F083244C96D500083DDF /* HHLDrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLDrawRectView.m; sourceTree = "<group>"; };
+		9419F085244C96D600083DDF /* HHPaintVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPaintVC.m; sourceTree = "<group>"; };
+		9419F086244C96D600083DDF /* HHBezierPathVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBezierPathVC.h; sourceTree = "<group>"; };
+		9419F087244C96D600083DDF /* HHBezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBezierPathView.h; sourceTree = "<group>"; };
+		9419F088244C96D600083DDF /* HHPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPaintView.m; sourceTree = "<group>"; };
+		9419F089244C96D600083DDF /* HHBezierPathVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBezierPathVC.m; sourceTree = "<group>"; };
+		9419F08A244C96D600083DDF /* HHPaintVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPaintVC.h; sourceTree = "<group>"; };
+		9419F08B244C96D600083DDF /* HHBezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBezierPathView.m; sourceTree = "<group>"; };
+		9419F08C244C96D600083DDF /* HHPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPaintView.h; sourceTree = "<group>"; };
+		9419F096244C979500083DDF /* HHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHViewController.h; sourceTree = "<group>"; };
+		9419F097244C979500083DDF /* HHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +189,8 @@
 		044215F020CA1BA7000847A0 /* HHDrawView */ = {
 			isa = PBXGroup;
 			children = (
+				9419F084244C96D600083DDF /* HHBezierPath */,
+				9419F079244C96D500083DDF /* HHDrawRect */,
 				049E7E7020CEC36F007688BF /* HHAnimationView */,
 				04E94E6020CE0711001AC379 /* HHDrawBoardView */,
 				0442163320CB8344000847A0 /* HHContextVC */,
@@ -197,6 +229,10 @@
 		0442162C20CA1F54000847A0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				044215F420CA1BA7000847A0 /* ViewController.h */,
+				044215F520CA1BA7000847A0 /* ViewController.m */,
+				9419F096244C979500083DDF /* HHViewController.h */,
+				9419F097244C979500083DDF /* HHViewController.m */,
 				044215F120CA1BA7000847A0 /* AppDelegate.h */,
 				044215F220CA1BA7000847A0 /* AppDelegate.m */,
 				044215FF20CA1BA7000847A0 /* Info.plist */,
@@ -211,8 +247,6 @@
 		0442163320CB8344000847A0 /* HHContextVC */ = {
 			isa = PBXGroup;
 			children = (
-				044215F420CA1BA7000847A0 /* ViewController.h */,
-				044215F520CA1BA7000847A0 /* ViewController.m */,
 				0442161E20CA1C3F000847A0 /* HHBaseViewController.h */,
 				0442161D20CA1C3F000847A0 /* HHBaseViewController.m */,
 				0442160820CA1BC9000847A0 /* HHDrawViewController.h */,
@@ -251,6 +285,38 @@
 				049D2C9820CDE03600D9E82B /* HHDrawTopView.m */,
 			);
 			path = HHDrawBoardView;
+			sourceTree = "<group>";
+		};
+		9419F079244C96D500083DDF /* HHDrawRect */ = {
+			isa = PBXGroup;
+			children = (
+				9419F07A244C96D500083DDF /* HHDrawRectVC.h */,
+				9419F07B244C96D500083DDF /* HHClipRoundViewVC.h */,
+				9419F07C244C96D500083DDF /* HHDrawAllView.h */,
+				9419F07D244C96D500083DDF /* HHLDrawRectView.h */,
+				9419F07E244C96D500083DDF /* HHClipRoundView.h */,
+				9419F07F244C96D500083DDF /* HHDrawAllView.m */,
+				9419F080244C96D500083DDF /* HHClipRoundViewVC.m */,
+				9419F081244C96D500083DDF /* HHDrawRectVC.m */,
+				9419F082244C96D500083DDF /* HHClipRoundView.m */,
+				9419F083244C96D500083DDF /* HHLDrawRectView.m */,
+			);
+			path = HHDrawRect;
+			sourceTree = "<group>";
+		};
+		9419F084244C96D600083DDF /* HHBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				9419F085244C96D600083DDF /* HHPaintVC.m */,
+				9419F086244C96D600083DDF /* HHBezierPathVC.h */,
+				9419F087244C96D600083DDF /* HHBezierPathView.h */,
+				9419F088244C96D600083DDF /* HHPaintView.m */,
+				9419F089244C96D600083DDF /* HHBezierPathVC.m */,
+				9419F08A244C96D600083DDF /* HHPaintVC.h */,
+				9419F08B244C96D600083DDF /* HHBezierPathView.m */,
+				9419F08C244C96D600083DDF /* HHPaintView.h */,
+			);
+			path = HHBezierPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,26 +395,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				0431FB1920CAEBDF00E14141 /* HHScrawlView.m in Sources */,
+				9419F098244C979600083DDF /* HHViewController.m in Sources */,
 				044215F620CA1BA7000847A0 /* ViewController.m in Sources */,
 				0431FB1620CAA9BE00E14141 /* HHBarChartView.m in Sources */,
 				0442161720CA1BD0000847A0 /* HHDrawRoundView.m in Sources */,
+				9419F08E244C96D600083DDF /* HHClipRoundViewVC.m in Sources */,
 				0442163220CA6AC2000847A0 /* UIColor+Ext.m in Sources */,
 				04B1082B21132B290055221C /* HHClockView.m in Sources */,
+				9419F092244C96D600083DDF /* HHPaintVC.m in Sources */,
 				049D2C9220CCDA6200D9E82B /* HHDrawBoardViewController.m in Sources */,
+				9419F093244C96D600083DDF /* HHPaintView.m in Sources */,
 				049D2C8E20CCD9ED00D9E82B /* HHDrawBoardView.m in Sources */,
+				9419F08D244C96D600083DDF /* HHDrawAllView.m in Sources */,
 				0442161F20CA1C3F000847A0 /* HHBaseViewController.m in Sources */,
 				0431FB1220CAA76C00E14141 /* UIView+Ext.m in Sources */,
 				0442160920CA1BCA000847A0 /* HHDrawViewController.m in Sources */,
 				0442161B20CA1BD0000847A0 /* HHDrawImageView.m in Sources */,
 				049D2C8B20CBB13400D9E82B /* UIImage+Ext.m in Sources */,
 				049D2C9920CDE03600D9E82B /* HHDrawTopView.m in Sources */,
+				9419F095244C96D600083DDF /* HHBezierPathView.m in Sources */,
 				0442163620CB83C3000847A0 /* HHGraphicsViewController.m in Sources */,
 				044215F320CA1BA7000847A0 /* AppDelegate.m in Sources */,
+				9419F091244C96D600083DDF /* HHLDrawRectView.m in Sources */,
+				9419F090244C96D600083DDF /* HHClipRoundView.m in Sources */,
 				0442161A20CA1BD0000847A0 /* HHBaseView.m in Sources */,
 				0431FB1C20CAF56C00E14141 /* UIButton+Ext.m in Sources */,
+				9419F08F244C96D600083DDF /* HHDrawRectVC.m in Sources */,
 				0442161920CA1BD0000847A0 /* HHDrawLineView.m in Sources */,
 				0442161C20CA1BD0000847A0 /* HHDrawRectView.m in Sources */,
 				0442162B20CA1F1A000847A0 /* main.m in Sources */,
+				9419F094244C96D600083DDF /* HHBezierPathVC.m in Sources */,
 				049D2C9620CCE81900D9E82B /* HHBezierPath.m in Sources */,
 				0442161820CA1BD0000847A0 /* HHDrawTextView.m in Sources */,
 				0442162F20CA5984000847A0 /* HHProgressView.m in Sources */,
@@ -489,7 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 282RD4DA3C;
+				DEVELOPMENT_TEAM = 3AAKAAQAL9;
 				INFOPLIST_FILE = HHDrawView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,7 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 282RD4DA3C;
+				DEVELOPMENT_TEAM = 3AAKAAQAL9;
 				INFOPLIST_FILE = HHDrawView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
